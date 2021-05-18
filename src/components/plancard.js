@@ -10,18 +10,18 @@ class PlanCard extends Component {
 
     render(){
         return (
-            <div className="main-card">
-                <div className="level">BASIC</div>
-                <div className="topic">Introduction to Coding</div>
-                <div className="topics">TOPICS COVERED</div>
-                <div className="topics-covered">Sequence | Algorithms | Debugging | Code Art | Animations</div>
-                <div className="topics">PROJECTS</div>
-                <div className="topics-covered">Code Story</div>
-                <div className="topics">SESSIONS</div>
-                <div className="topics-covered">8 classes</div>
+            <div className="main-card"> 
+                <div className="level">{this.props.classesInfo.level}</div>
+                <div className="topic">{this.props.classesInfo.topic}</div>
+                <div className="topics">{this.props.classesInfo.topics}</div>
+                <div className="topics-covered">{this.props.classesInfo.topics_covered}</div>
+                <div className="topics">{this.props.classesInfo.project}</div>
+                <div className="topics-covered">{this.props.classesInfo.project_covered}</div>
+                <div className="topics">{this.props.classesInfo.sessions}</div>
+                <div className="topics-covered">{this.props.classesInfo.classes_num}</div>
                 <br></br>
-                <div className="discount">7% discount</div>
-                <div className="amount"><span className="striked"><strike>₹6,000</strike></span> ₹5,600</div>
+                <div className="discount">{this.props.classesInfo.discount}</div>
+                <div className="amount"><span className="striked"><strike>{this.props.classesInfo.amount1}</strike></span> {this.props.classesInfo.amount2}</div>
                 <br></br>
                 <div style={{textAlign: `center`}}>
                     <button className="free-trial-button">Book a free trial</button>

@@ -4,6 +4,9 @@ import freelancer from '../assets/freelancer.svg';
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
 import PlanCard from './plancard';
+import SimpleSlider from './SimpleSlider';
+import Footer from './footer'
+
 
 class HomePage extends Component {
 
@@ -14,7 +17,53 @@ class HomePage extends Component {
         this.showc2=this.showc2.bind(this);
         this.showc3=this.showc3.bind(this);
 
+        this.state = {
+            classes_1_4:{
+                classes_upto:'',
+                basic:{
+                    level:'BASIC',
+                    topic:'Introduction to Coding',
+                    topics:'TOPICS COVERED',
+                    topics_covered:'Sequence | Algorithms | Debugging | Code Art | Animations',
+                    project:'PROJECTS',
+                    project_covered:'Code Story',
+                    sessions:'SESSIONS',
+                    classes_num:'8 classes',
+                    discount:'7% discount',
+                    amount1:"₹6,000",
+                    amount2:'₹5,600'
+                },
+                standard:{
+                    level:'STANDARD',
+                    topic:'Design and Create',
+                    topics:'TOPICS COVERED',
+                    topics_covered:'Events, Characters, Interactive utility apps and games',
+                    project:'PROJECTS',
+                    project_covered:'Code Story, Pocket-money manager, Soundboard Quiz app',
+                    sessions:'SESSIONS',
+                    classes_num:'8 classes',
+                    discount:'11% discount',
+                    amount1:"₹36,000",
+                    amount2:'₹32,000'
+                },
+                premium:{
+                    level:'PREMIUM',
+                    topic:'App & Game Development',
+                    topics:'TOPICS COVERED',
+                    topics_covered:'Multiscreen native utility apps, AI chatbots, Complex game development',
+                    project:'PROJECTS',
+                    project_covered:'Code StoryPocket-money managerSoundboard Quiz appBubble shooterPortfolio Mobile AppUnit Converter',
+                    sessions:'SESSIONS',
+                    classes_num:'8 classes',
+                    discount:'12% discount',
+                    amount1:"₹100,000",
+                    amount2:'₹95,000'
+                }
+            }
+          };
     }
+
+
 
     showc1(){
         document.getElementById("c1").style.backgroundColor="white";
@@ -69,7 +118,7 @@ class HomePage extends Component {
                     Your child can change the world.
                     </ScrollAnimation>
                     </div>
-                    <div className="title" style={{fontSize: `2.5vw`, color: `#458670`}}>
+                    <div className="title" style={{fontSize: `2.5vw`, color: `#458670`,top:'280px'}}>
                     <ScrollAnimation
                     animateIn='animate__fadeInUp'
                     animateOut='animate__fadeOut'
@@ -78,7 +127,7 @@ class HomePage extends Component {
                     </ScrollAnimation>
                     </div>
                     </div>
-                    <img src={freelancer} width="80%" style={{zIndex: `1`, position: `relative`}}></img>
+                    <img src={freelancer}  style={{zIndex: `1`, width:"80%", position: `relative`, top:'40px'}}></img>
 
                 </div>
 
@@ -101,38 +150,59 @@ class HomePage extends Component {
                         <ul>
                             <ScrollAnimation
                             animateIn='animate__zoomIn'
-                            animateOnce={true}
+                            animateOnce={true} 
                             duration='1'
                             >
-                            <li id="classes1">
-                                classes 1 to 4
-                                <PlanCard />
+                            <div>
+                            <div style={{display:'flex'}}>
+                            <li id="classes1"  style={{margin:'auto 30px auto 30px'}}>
+                                
+                                <PlanCard classesInfo={this.state.classes_1_4.basic} />
                             </li>
+
+                            <li id="classes1" style={{margin:'auto 30px auto 30px'}}>
+                                <PlanCard classesInfo={this.state.classes_1_4.standard} />
+                            </li>
+
+                            <li id="classes1" style={{margin:'auto 30px auto 30px'}}>
+                                <PlanCard classesInfo={this.state.classes_1_4.premium} />
+                            </li>
+                            </div>
+                            </div>
                             </ScrollAnimation>
                             <ScrollAnimation
                             animateIn='animate__zoomIn'
                             animateOnce={true}
                             duration='1'
                             >
+                            <div>
                             <li id="classes2">
-                                classes 5 to 8
+                               
+                                <PlanCard classesInfo={this.state.classes_1_4.basic} />
                             </li>
+                            </div>
                             </ScrollAnimation>
                             <ScrollAnimation
                             animateIn='animate__zoomIn'
                             animateOnce={true}
                             duration='1'
                             >
+                                <div>
                             <li id="classes3">
-                                classes 9 to 12
+                                
+                                <PlanCard classesInfo={this.state.classes_1_4.basic} />
                             </li>
+                            </div>
                             </ScrollAnimation>
                         </ul>
                     </div>                    
                 </div>
                 <br></br>
                 <br></br>
-                <div style={{height: `1800px`, backgroundColor: `white`}}></div>
+                <div className='carouselImage' style={{width:'100%',height:'60vh'}}>
+                <SimpleSlider />
+                </div>
+                <Footer />
             </div>
         );
     }
