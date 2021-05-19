@@ -357,3 +357,15 @@ li {
   font-weight: bold;
   margin: 0px;
 }
+
+.works {
+  text-align: center;
+}
+
+.works-title {
+  font-size: 3.2vw;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  margin-left: 20%;
+  margin-right: 20%;
+}

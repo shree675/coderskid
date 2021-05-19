@@ -12,6 +12,7 @@ import statistic from '../assets/growing-statistic.svg';
 import laptop from '../assets/laptop.svg';
 import confidence from '../assets/confidence.svg';
 import {Link} from 'react-router-dom';
+import WorkCard from './workcard';
 
 class HomePage extends Component {
 
@@ -217,6 +218,12 @@ class HomePage extends Component {
                         </table>
                     </div>
                     {/* </ScrollAnimation> */}
+                </div>
+
+                <div style={{height: `100px`, backgroundColor: `white`}}></div>
+
+                <div className="works">
+                    <div className="works-title">Here are some of the best works of our students</div>
                 </div>
 
                 <div style={{height: `100px`, backgroundColor: `white`}}></div>
