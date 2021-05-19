@@ -33,7 +33,7 @@ class Navbar extends Component {
         return (
             <div style={{position: `fixed`, width: `100%`, zIndex: `3`}} className={this.state.scrolled?"bg1":"bg2"}>
 
-                    <div className={this.state.scrolled?"navbar-init":"navbar"}>
+                    <div className={this.state.scrolled?"navbar-init":"navbar-scrolled"}>
                         <div style={{float: `left`}}>
                             <Link to='/' style={{textDecoration: `none`, color: `black`}}>
                                 <div style={{margin: `0px`, paddingBottom: this.state.scrolled?`15px`:`12px`}}>                                    
@@ -44,7 +44,7 @@ class Navbar extends Component {
                         <div className="right">
                         <Link to='/' style={{textDecoration: `none`, color: `black`}}>  
                             <div className="about-us-button" style={{fontSize: this.state.scrolled?`16px`:`14px`}}>                  
-                                <div>About Us</div>                                
+                                <div>About Us</div>                            
                             </div>
                         </Link>                        
                         </div>
@@ -54,7 +54,7 @@ class Navbar extends Component {
                                 <div>Book a free class</div>                                
                             </div>
                         </Link>                        
-                        </div>                     
+                        </div>
                     </div>                    
 
             </div>

@@ -5,13 +5,12 @@ class PlanCard extends Component {
     constructor(props){
         super(props);
         // get card details from props
-        // I have hardcoded details right now
     }
 
     render(){
         return (
             <div className="main-card"> 
-                <div className="level">{this.props.classesInfo.level}</div>
+                <div className="level" style={{color: this.props.classesInfo.color}}>{this.props.classesInfo.level}</div>
                 <div className="topic">{this.props.classesInfo.topic}</div>
                 <div className="topics">{this.props.classesInfo.topics}</div>
                 <div className="topics-covered">{this.props.classesInfo.topics_covered}</div>

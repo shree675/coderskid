@@ -7,7 +7,11 @@ import PlanCard from './plancard';
 import SimpleSlider from './SimpleSlider';
 import Footer from './footer'
 import FormInfo from './FormInfo'
-
+import skills from '../assets/skills.svg';
+import statistic from '../assets/growing-statistic.svg';
+import laptop from '../assets/laptop.svg';
+import confidence from '../assets/confidence.svg';
+import {Link} from 'react-router-dom';
 
 class HomePage extends Component {
 
@@ -35,7 +39,8 @@ class HomePage extends Component {
                     classes_num:'8 classes',
                     discount:'7% discount',
                     amount1:"₹6,000",
-                    amount2:'₹5,600'
+                    amount2:'₹5,600',
+                    color: 'green'
                 },
                 standard:{
                     level:'STANDARD',
@@ -48,7 +53,8 @@ class HomePage extends Component {
                     classes_num:'8 classes',
                     discount:'11% discount',
                     amount1:"₹36,000",
-                    amount2:'₹32,000'
+                    amount2:'₹32,000',
+                    color: 'orange'
                 },
                 premium:{
                     level:'PREMIUM',
@@ -61,15 +67,14 @@ class HomePage extends Component {
                     classes_num:'8 classes',
                     discount:'12% discount',
                     amount1:"₹100,000",
-                    amount2:'₹95,000'
+                    amount2:'₹95,000',
+                    color: 'tomato'
                 },
             }
     
           }
 
     }
-
-    
 
     purchaseHandler = () => {
         this.setState({purchase:true});
@@ -145,15 +150,81 @@ class HomePage extends Component {
                     </ScrollAnimation>
                     </div>
                     </div>
-                    <img src={freelancer}  style={{zIndex: `1`, width:"80%", position: `relative`, top:'40px'}}></img>
+                    <img src={freelancer} style={{zIndex: `1`, width:"62%", position: `relative`, top:'52px'}}></img>
 
                 </div>
 
                 <div style={{height: `100px`, backgroundColor: `white`}}></div>
 
+                <div className="why-coding">
+                    <div className="why-title">Every <span style={{color: `turquoise`}}>child</span> must have the chance to learn the skills of tomorrow.</div>
+                    <br></br>
+                    <div className="quote"><i>Children must be taught how to think, not what to think <div className="quote-sub">- Margaret Mead</div></i>
+                    </div>
+                    <br></br>                    
+                    <br></br>
+                    <br></br>
+                    {/* <ScrollAnimation
+                    animateIn='animate__slideInLeft'
+                    animateOnce={true}
+                    > */}
+                    <div className="why-box">
+                        <table className="why-table">                            
+                            <tr className="why-row">
+                                <td className="why-data1" style={{color: `lightseagreen`}}>We believe that every young person should have access to the tools and skills to power their own future. We imagine a world where every child, no matter where they live, has the opportunity to shape their future.</td>
+                                <td className="why-data2"><img src={skills} width="20%"></img></td>
+                            </tr>
+                        </table>
+                    </div>
+                    {/* </ScrollAnimation> */}
+                    {/* <ScrollAnimation
+                    animateIn='animate__slideInRight'
+                    animateOnce={true}
+                    > */}
+                    <div className="why-box">
+                        <table className="why-table">
+                            <tr className="why-row">
+                                <td className="why-data1" style={{color: `deepskyblue`}}>Kids have access to computers every day and they use them as consumers, rather than designers and creators. Let’s change that and teach kids how to think creatively, reason systematically and work collaboratively.</td>
+                                <td className="why-data2"><img src={laptop} width="20%"></img></td>
+                            </tr>
+                        </table>
+                    </div>
+                    {/* </ScrollAnimation>
+                    <ScrollAnimation
+                    animateIn='animate__slideInLeft'
+                    animateOnce={true}
+                    > */}
+                    <div className="why-box">
+                        <table className="why-table">
+                            <tr className="why-row">
+                                <td className="why-data1" style={{color: `lightseagreen`}}>By joining a Code Club, you’re part of an international network of 15,000 clubs and over 250,000 young people. Your child will gain coding skills, as well as important soft skills like public speaking, confidence and communication.</td>
+                                <td className="why-data2"><img src={confidence} width="28%"></img></td>
+                            </tr>
+                        </table>                        
+                    </div>
+                    {/* </ScrollAnimation>
+                    <ScrollAnimation
+                    animateIn='animate__slideInRight'
+                    animateOnce={true}
+                    > */}
+                    <div className="why-box">
+                        <table className="why-table">
+                            
+                            <tr className="why-row">
+                                <td className="why-data1" style={{color: `deepskyblue`}}>A child expands their creativity when they learn how to code. Coding teaches children to experiment and gives them the confidence to be creative. They will improve their ability to think.</td>
+                                <td className="why-data2"><img src={statistic} width="35%"></img></td>
+                            </tr>                            
+                        </table>
+                    </div>
+                    {/* </ScrollAnimation> */}
+                </div>
+
+                <div style={{height: `100px`, backgroundColor: `white`}}></div>
+
+                <br></br>
+
                 <div className="plans-section">
                     <div className="title2">Courses designed for every child</div>
-                    <br></br>
                     <br></br>
                     <br></br>
                     <br></br>
@@ -178,8 +249,7 @@ class HomePage extends Component {
                             >
                             <div>
                             <div style={{display:'flex'}}>
-                            <li id="classes1"  style={{margin:'auto 30px auto 30px'}}>
-                                
+                            <li id="classes1"  style={{margin:'auto 30px auto 30px'}}>                                
                                 <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.basic} />
                             </li>
 
@@ -210,9 +280,8 @@ class HomePage extends Component {
                             animateOnce={true}
                             duration='1'
                             >
-                                <div>
-                            <li id="classes3">
-                                
+                            <div>
+                            <li id="classes3">                                
                                 <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.basic} />
                             </li>
                             </div>
@@ -225,6 +294,15 @@ class HomePage extends Component {
                 <div className='carouselImage' style={{width:'100%',height:'60vh'}}>
                 <SimpleSlider />
                 </div>
+
+                <div className="segment">
+                    <Link to='/' style={{textDecoration: `none`, color: `black`, width: `300px`}}>  
+                        <div onClick={this.props.ordered} className="free-class-button2" style={{textAlign: `center`}}>                  
+                            <div>BOOK A FREE CLASS NOW</div>                                
+                        </div>
+                    </Link>
+                </div>
+
                 <Footer />
             </div>
         );
