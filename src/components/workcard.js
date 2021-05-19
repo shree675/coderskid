@@ -1,4 +1,5 @@
 import {Component} from 'react';
+import ribbon from '../assets/ribbon.svg';
 
 class WorkCard extends Component {
 
@@ -7,14 +8,27 @@ class WorkCard extends Component {
 
         this.state={
             img: props.img,
-            person: props.person,
+            author: props.author,
             title: props.title
         }
     }
 
     render(){
         return (
-            <div></div>
+            <div className="workcard-main">
+                <div style={{height: `150px`, overflow: `hidden`}}>
+                    <img src={this.state.img} className="work-img"></img>
+                </div>
+                <div>                    
+                    <div className="game-title">{this.state.title}</div>
+                    <div className="author">{this.state.author}</div>
+                </div>
+                <div style={{float: `right`, position: `relative`, bottom: `15px`, right: `10px`}}>
+                    <img src={ribbon} height="20px"></img>
+                </div>
+            </div>
         );
     }
 }
+
+export default WorkCard;

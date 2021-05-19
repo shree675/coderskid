@@ -5,14 +5,16 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
 import PlanCard from './plancard';
 import SimpleSlider from './SimpleSlider';
-import Footer from './footer'
-import FormInfo from './FormInfo'
+import Footer from './footer';
+import FormInfo from './FormInfo';
 import skills from '../assets/skills.svg';
 import statistic from '../assets/growing-statistic.svg';
 import laptop from '../assets/laptop.svg';
 import confidence from '../assets/confidence.svg';
 import {Link} from 'react-router-dom';
 import WorkCard from './workcard';
+import game1 from '../assets/game1.jpeg';
+import game2 from '../assets/game2.jpg';
 
 class HomePage extends Component {
 
@@ -224,9 +226,20 @@ class HomePage extends Component {
 
                 <div className="works">
                     <div className="works-title">Here are some of the best works of our students</div>
+                    <br></br>
+                    <WorkCard img={game1} title={"Super Mario World"} author={"By Sheth Tanaya"} />
+                    <WorkCard img={game2} title={"Super Mario World"} author={"By Sheth Tanaya"} />
+                    <WorkCard img={game2} title={"Super Mario World"} author={"By Sheth Tanaya"} />
+                    <WorkCard img={game1} title={"Super Mario World"} author={"By Sheth Tanaya"} />
+                    <WorkCard img={game1} title={"Super Mario World"} author={"By Sheth Tanaya"} />
+                    <WorkCard img={game1} title={"Super Mario World"} author={"By Sheth Tanaya"} />
+                    <WorkCard img={game2} title={"Super Mario World"} author={"By Sheth Tanaya"} />
+                    <WorkCard img={game1} title={"Super Mario World"} author={"By Sheth Tanaya"} />
                 </div>
 
-                <div style={{height: `100px`, backgroundColor: `white`}}></div>
+                <br></br>
+
+                <div style={{height: `550px`, width: `100%`, backgroundColor: `white`}}></div>
 
                 <br></br>
 
