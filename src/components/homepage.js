@@ -6,6 +6,7 @@ import "animate.css/animate.min.css";
 import PlanCard from './plancard';
 import SimpleSlider from './SimpleSlider';
 import Footer from './footer'
+import FormInfo from './FormInfo'
 
 
 class HomePage extends Component {
@@ -16,8 +17,11 @@ class HomePage extends Component {
         this.showc1=this.showc1.bind(this);
         this.showc2=this.showc2.bind(this);
         this.showc3=this.showc3.bind(this);
-
+    
         this.state = {
+        
+            purchase:false,
+    
             classes_1_4:{
                 classes_upto:'',
                 basic:{
@@ -58,11 +62,22 @@ class HomePage extends Component {
                     discount:'12% discount',
                     amount1:"₹100,000",
                     amount2:'₹95,000'
-                }
+                },
             }
-          };
+    
+          }
+
     }
 
+    
+
+    purchaseHandler = () => {
+        this.setState({purchase:true});
+    }
+
+    purchaseHandlerClose = () => {
+        this.setState({purchase:false});
+    }
 
 
     showc1(){
@@ -101,10 +116,13 @@ class HomePage extends Component {
         document.getElementById("classes2").style.display="none";
     }
 
+   
+
     render(){
+
         return (
             <div>
-                <Navbar />
+                <Navbar ordered={this.purchaseHandler} />
                 <div style={{height: `30px`}}></div>
                 
                 <div className="jumbotron">
@@ -146,6 +164,11 @@ class HomePage extends Component {
                     </div>
                     <br></br>
                     <br></br>
+
+                    <div style={{position:'relative'}}>
+                   { this.state.purchase ?<div className="formInfo"> <FormInfo ordered={this.purchaseHandlerClose} /></div>:null}
+                   </div>
+
                     <div className="ul-act">
                         <ul>
                             <ScrollAnimation
@@ -157,15 +180,15 @@ class HomePage extends Component {
                             <div style={{display:'flex'}}>
                             <li id="classes1"  style={{margin:'auto 30px auto 30px'}}>
                                 
-                                <PlanCard classesInfo={this.state.classes_1_4.basic} />
+                                <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.basic} />
                             </li>
 
                             <li id="classes1" style={{margin:'auto 30px auto 30px'}}>
-                                <PlanCard classesInfo={this.state.classes_1_4.standard} />
+                                <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.standard} />
                             </li>
 
                             <li id="classes1" style={{margin:'auto 30px auto 30px'}}>
-                                <PlanCard classesInfo={this.state.classes_1_4.premium} />
+                                <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.premium} />
                             </li>
                             </div>
                             </div>
@@ -178,7 +201,7 @@ class HomePage extends Component {
                             <div>
                             <li id="classes2">
                                
-                                <PlanCard classesInfo={this.state.classes_1_4.basic} />
+                                <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.basic} />
                             </li>
                             </div>
                             </ScrollAnimation>
@@ -190,7 +213,7 @@ class HomePage extends Component {
                                 <div>
                             <li id="classes3">
                                 
-                                <PlanCard classesInfo={this.state.classes_1_4.basic} />
+                                <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.basic} />
                             </li>
                             </div>
                             </ScrollAnimation>

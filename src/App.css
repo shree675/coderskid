@@ -232,3 +232,17 @@ li {
 .carouselImage{
   background-color: #e9896a;
 }
+
+.formInfo {
+  background-color: rgb(187, 187, 187);
+  /* height: 60px;
+  display: flex;  */
+  position: absolute;
+  z-index: 500;
+  width: 70%;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px black;
+    padding: 16px;
+    left: 15%;
+    top: 30%;
+}

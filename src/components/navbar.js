@@ -50,7 +50,7 @@ class Navbar extends Component {
                         </div>
                         <div className="right">
                         <Link to='/' style={{textDecoration: `none`, color: `black`}}>  
-                            <div className="free-class-button" style={{fontSize: this.state.scrolled?`16px`:`14px`}}>                  
+                            <div onClick={this.props.ordered} className="free-class-button" style={{fontSize: this.state.scrolled?`16px`:`14px`}}>                  
                                 <div>Book a free class</div>                                
                             </div>
                         </Link>                        
