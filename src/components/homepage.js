@@ -242,35 +242,68 @@ class HomePage extends Component {
                 <div style={{height: `550px`, width: `100%`, backgroundColor: `white`}}></div>
 
                 <div style={{height: `100px`}}></div>
+
+                {/* <ParallaxProvider>
+                <Parallax y={[100,-50]} tagOuter="figure"> */}
                 
                 <div className="future-ready">
                     <div className="future-text">Make your child future ready!</div>
                     <div className="future-subtext">The GenZ workforce will be centered around new computational technologies like ML, AI, VR, AR, Blockchain, IoT and Robotics. An early start to coding will make them the creators of tomorrow.</div>
                     <div className="future-card">
                         <br></br>
-                        <ParallaxProvider>
-                        <Parallax y={[20,-20]} tagOuter="figure">
+                        <br></br>
                         <img src={focus} className="future-img"></img>  
-                        <div className="future-content" style={{color: `deepskyblue`}}>Increases focus and concentration</div> 
-                        </Parallax>
-                        </ParallaxProvider>
+                        <ScrollAnimation
+                            animateIn='animate__slideInUp'
+                            animateOnce={true}
+                            duration='0.5'
+                            >
+                        <div className="future-content">Increases focus and concentration</div> 
+                        </ScrollAnimation>
                         <img src={logic} className="future-img"></img>
-                        
-                        <div className="future-content" style={{color: `deepskyblue`}}>Improves logical thinking</div>   
+                        <ScrollAnimation
+                            animateIn='animate__slideInUp'
+                            animateOnce={true}
+                            duration='0.5'
+                            >
+                        <div className="future-content">Improves logical thinking</div>  
+                        </ScrollAnimation> 
                         <img src={solve} className="future-img"></img>
-                        <div className="future-content" style={{color: `deepskyblue`}}>Sharpens problem solving</div> 
+                        <ScrollAnimation
+                            animateIn='animate__slideInUp'
+                            animateOnce={true}
+                            duration='0.5'
+                            >
+                        <div className="future-content">Sharpens problem solving</div>
+                        </ScrollAnimation> 
                         <img src={creative} className="future-img"></img>
-                        <div className="future-content" style={{color: `deepskyblue`}}>Fosters imagination and creativity</div>  
-                        <ParallaxProvider>
-                        <Parallax y={[20,-20]} tagOuter="figure"> 
-                        <img src={speak} className="future-img"></img>                        
-                        <div className="future-content" style={{color: `deepskyblue`}}>Enhances their communication skills</div>
-                        </Parallax>
-                        </ParallaxProvider>
+                        <ScrollAnimation
+                            animateIn='animate__slideInUp'
+                            animateOnce={true}
+                            duration='0.5'
+                            >
+                        <div className="future-content">Fosters imagination and creativity</div>  
+                        </ScrollAnimation>
+                        <img src={speak} className="future-img"></img>         
+                        <ScrollAnimation
+                            animateIn='animate__slideInUp'
+                            animateOnce={true}
+                            duration='0.5'
+                            >
+                        <div className="future-content">Enhances their communication skills</div>
+                        </ScrollAnimation>
+                        <div style={{height: `220px`}}></div>
+                        <div style={{fontSize: `3vw`, fontFamily: `Quicksand`, color: `black`, fontWeight: `bold`}}> So, why wait?</div>                     
+                        <Link to='/form' >    
+                        <button className="headBut2">Book A Free Class Now!</button>
+                        </Link>
                     </div>
-                </div>                
+                </div>     
 
-                <div style={{height: `100px`}}></div>
+                {/* </Parallax>
+                        </ParallaxProvider>            */}
+
+                <div style={{height: `400px`}}></div>
                 
                 <div className="plans-section">
                     <div className="title2">Courses designed for every child</div>
@@ -382,7 +415,7 @@ class HomePage extends Component {
                 <div className="segment">
                     <Link to='/form' style={{textDecoration: `none`, color: `black`, width: `300px`}}>  
                         <div onClick={this.props.ordered} className="free-class-button2" style={{textAlign: `center`}}>                  
-                            <div>BOOK A FREE CLASS NOW</div>                                
+                            <div>BOOK A FREE CLASS</div>                                
                         </div>
                     </Link>
                 </div>
