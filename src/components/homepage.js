@@ -252,6 +252,7 @@ class HomePage extends Component {
                     <div className="future-card">
                         <br></br>
                         <br></br>
+                        <div style={{flex: `1`}}>
                         <img src={focus} className="future-img"></img>  
                         <ScrollAnimation
                             animateIn='animate__slideInUp'
@@ -259,7 +260,10 @@ class HomePage extends Component {
                             duration='0.5'
                             >
                         <div className="future-content">Increases focus and concentration</div> 
+                        
                         </ScrollAnimation>
+                        </div>
+                        <div style={{flex: `1`}}>
                         <img src={logic} className="future-img"></img>
                         <ScrollAnimation
                             animateIn='animate__slideInUp'
@@ -268,6 +272,10 @@ class HomePage extends Component {
                             >
                         <div className="future-content">Improves logical thinking</div>  
                         </ScrollAnimation> 
+                        </div>
+                        </div>
+                        <div className="future-card">
+                        <div style={{flex: `1`}}>
                         <img src={solve} className="future-img"></img>
                         <ScrollAnimation
                             animateIn='animate__slideInUp'
@@ -276,6 +284,8 @@ class HomePage extends Component {
                             >
                         <div className="future-content">Sharpens problem solving</div>
                         </ScrollAnimation> 
+                        </div>
+                        <div style={{flex: `1`}}>
                         <img src={creative} className="future-img"></img>
                         <ScrollAnimation
                             animateIn='animate__slideInUp'
@@ -284,6 +294,10 @@ class HomePage extends Component {
                             >
                         <div className="future-content">Fosters imagination and creativity</div>  
                         </ScrollAnimation>
+                        </div>
+                        </div>
+                        <div className="future-card">
+                        <div style={{flex: `1`}}>
                         <img src={speak} className="future-img"></img>         
                         <ScrollAnimation
                             animateIn='animate__slideInUp'
@@ -292,16 +306,28 @@ class HomePage extends Component {
                             >
                         <div className="future-content">Enhances their communication skills</div>
                         </ScrollAnimation>
+                        </div>
+                        <div style={{flex: `1`}}>
+                        <img src={focus} className="future-img"></img>  
+                        <ScrollAnimation
+                            animateIn='animate__slideInUp'
+                            animateOnce={true}
+                            duration='0.5'
+                            >
+                        <div className="future-content">Increases focus and concentration</div> 
+                        
+                        </ScrollAnimation>
+                        </div>
+                        </div>                        
                         <div style={{height: `220px`}}></div>
                         <div style={{fontSize: `3vw`, fontFamily: `Quicksand`, color: `black`, fontWeight: `bold`}}> So, why wait?</div>                     
                         <Link to='/form' >    
                         <button className="headBut2">Book A Free Class Now!</button>
                         </Link>
                     </div>
-                </div>     
 
                 {/* </Parallax>
-                        </ParallaxProvider>            */}
+                        </ParallaxProvider> */}
 
                 <div style={{height: `400px`}}></div>
                 
