@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import Button from 'react-bootstrap/Button'; 
 import Form from 'react-bootstrap/Form'; 
 import Col from 'react-bootstrap/Col';
+import { Link } from 'react-router-dom';
 
 const FormInfo = (props) => {
 
@@ -65,7 +66,7 @@ const FormInfo = (props) => {
     }
 
         return(
-            <div>
+            <div className="formInfo">
                <Form onSubmit={handleSubmit}>
                <Form.Row>
     <Col>
@@ -78,7 +79,7 @@ const FormInfo = (props) => {
     </Col>
   </Form.Row>
 
-  <Form.Row>
+  <Form.Row style={{marginTop:'20px'}}>
     <Form.Group as={Col} controlId="formGridEmail">
       <Form.Label>Parent's Email</Form.Label>
       <Form.Control type="email" placeholder="Enter Parent's email" value={parentEmail} onChange={e => setParentEmail(e.target.value)} />
@@ -98,11 +99,12 @@ const FormInfo = (props) => {
     </Form.Group>
 
   </Form.Row>
-<div style={{display:'flex'}}>
+<div style={{display:'flex', marginTop:'20px'}}>
 <div onClick={props.ordered} style={{marginRight:'20px'}}>
-  <Button variant="danger" type="submit">
+ <Link to='/'> <Button variant="danger" type="submit">
     Close
   </Button>
+  </Link>
   </div>
   <Button variant="primary" type="submit">
     Submit

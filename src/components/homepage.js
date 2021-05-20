@@ -16,6 +16,8 @@ import WorkCard from './workcard';
 import game1 from '../assets/game1.jpeg';
 import game2 from '../assets/game2.jpg';
 
+import Whycoding from './whycoding'
+
 class HomePage extends Component {
 
     constructor(props){
@@ -159,6 +161,8 @@ class HomePage extends Component {
 
                 <div style={{height: `100px`, backgroundColor: `white`}}></div>
 
+                    <Whycoding />
+                    
                 <div className="why-coding">
                     <div className="why-title">Every <span style={{color: `turquoise`}}>child</span> must have the chance to learn the skills of tomorrow.</div>
                     <br></br>
@@ -167,10 +171,6 @@ class HomePage extends Component {
                     <br></br>                    
                     <br></br>
                     <br></br>
-                    {/* <ScrollAnimation
-                    animateIn='animate__slideInLeft'
-                    animateOnce={true}
-                    > */}
                     <div className="why-box">
                         <table className="why-table">                            
                             <tr className="why-row">
@@ -179,11 +179,7 @@ class HomePage extends Component {
                             </tr>
                         </table>
                     </div>
-                    {/* </ScrollAnimation> */}
-                    {/* <ScrollAnimation
-                    animateIn='animate__slideInRight'
-                    animateOnce={true}
-                    > */}
+
                     <div className="why-box">
                         <table className="why-table">
                             <tr className="why-row">
@@ -255,10 +251,6 @@ class HomePage extends Component {
                     </div>
                     <br></br>
                     <br></br>
-
-                    <div style={{position:'relative'}}>
-                   { this.state.purchase ?<div className="formInfo"> <FormInfo ordered={this.purchaseHandlerClose} /></div>:null}
-                   </div>
 
                     <div className="ul-act">
                         <ul>
