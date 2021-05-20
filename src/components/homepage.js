@@ -15,8 +15,15 @@ import {Link} from 'react-router-dom';
 import WorkCard from './workcard';
 import game1 from '../assets/game1.jpeg';
 import game2 from '../assets/game2.jpg';
-
-import Whycoding from './whycoding'
+import focus from '../assets/conc.jpg';
+import superhero from '../assets/superhero.svg';
+import creative from '../assets/creativity.jpg';
+import logic from '../assets/logic.jpg';
+import solve from '../assets/problemsolving.jpg';
+import speak from '../assets/speaking.jpg';
+import Whycoding from './whycoding';
+import {Parallax} from 'react-scroll-parallax';
+import {ParallaxProvider} from 'react-scroll-parallax';
 
 class HomePage extends Component {
 
@@ -160,27 +167,25 @@ class HomePage extends Component {
                 </div>
 
                 <div style={{height: `100px`, backgroundColor: `white`}}></div>
-
                     <Whycoding />
-                    
-                <div className="why-coding">
+                {/* <div className="why-coding">
                     <div className="why-title">Every <span style={{color: `turquoise`}}>child</span> must have the chance to learn the skills of tomorrow.</div>
                     <br></br>
                     <div className="quote"><i>Children must be taught how to think, not what to think <div className="quote-sub">- Margaret Mead</div></i>
                     </div>
                     <br></br>                    
                     <br></br>
-                    <br></br>
-                    <div className="why-box">
+                    <br></br> */}
+                    {/* <div className="why-box">
                         <table className="why-table">                            
                             <tr className="why-row">
                                 <td className="why-data1" style={{color: `lightseagreen`}}>We believe that every young person should have access to the tools and skills to power their own future. We imagine a world where every child, no matter where they live, has the opportunity to shape their future.</td>
                                 <td className="why-data2"><img src={skills} width="20%"></img></td>
                             </tr>
                         </table>
-                    </div>
+                    </div> */}
 
-                    <div className="why-box">
+                    {/* <div className="why-box">
                         <table className="why-table">
                             <tr className="why-row">
                                 <td className="why-data1" style={{color: `deepskyblue`}}>Kids have access to computers every day and they use them as consumers, rather than designers and creators. Let’s change that and teach kids how to think creatively, reason systematically and work collaboratively.</td>
@@ -188,11 +193,6 @@ class HomePage extends Component {
                             </tr>
                         </table>
                     </div>
-                    {/* </ScrollAnimation>
-                    <ScrollAnimation
-                    animateIn='animate__slideInLeft'
-                    animateOnce={true}
-                    > */}
                     <div className="why-box">
                         <table className="why-table">
                             <tr className="why-row">
@@ -201,11 +201,6 @@ class HomePage extends Component {
                             </tr>
                         </table>                        
                     </div>
-                    {/* </ScrollAnimation>
-                    <ScrollAnimation
-                    animateIn='animate__slideInRight'
-                    animateOnce={true}
-                    > */}
                     <div className="why-box">
                         <table className="why-table">
                             
@@ -214,16 +209,20 @@ class HomePage extends Component {
                                 <td className="why-data2"><img src={statistic} width="35%"></img></td>
                             </tr>                            
                         </table>
-                    </div>
-                    {/* </ScrollAnimation> */}
-                </div>
+                    </div> */}
+                {/* </div> */}
 
-                <div style={{height: `100px`, backgroundColor: `white`}}></div>
+                <div style={{height: `50px`, backgroundColor: `white`}}></div>
+
+                {/* <ParallaxProvider>
+                <Parallax y={[20,-60]} tagOuter="figure"> */}
 
                 <div className="works">
                     <div className="works-title">Here are some of the best works of our students</div>
                     <br></br>
+                    
                     <WorkCard img={game1} title={"Super Mario World"} author={"By Sheth Tanaya"} />
+                    
                     <WorkCard img={game2} title={"Super Mario World"} author={"By Sheth Tanaya"} />
                     <WorkCard img={game2} title={"Super Mario World"} author={"By Sheth Tanaya"} />
                     <WorkCard img={game1} title={"Super Mario World"} author={"By Sheth Tanaya"} />
@@ -231,14 +230,48 @@ class HomePage extends Component {
                     <WorkCard img={game1} title={"Super Mario World"} author={"By Sheth Tanaya"} />
                     <WorkCard img={game2} title={"Super Mario World"} author={"By Sheth Tanaya"} />
                     <WorkCard img={game1} title={"Super Mario World"} author={"By Sheth Tanaya"} />
-                </div>
+                    
+                </div>   
 
+                {/* </Parallax>
+                </ParallaxProvider>              */}
                 <br></br>
+
+                
 
                 <div style={{height: `550px`, width: `100%`, backgroundColor: `white`}}></div>
 
-                <br></br>
+                <div style={{height: `100px`}}></div>
+                
+                <div className="future-ready">
+                    <div className="future-text">Make your child future ready!</div>
+                    <div className="future-subtext">The GenZ workforce will be centered around new computational technologies like ML, AI, VR, AR, Blockchain, IoT and Robotics. An early start to coding will make them the creators of tomorrow.</div>
+                    <div className="future-card">
+                        <br></br>
+                        <ParallaxProvider>
+                        <Parallax y={[20,-20]} tagOuter="figure">
+                        <img src={focus} className="future-img"></img>  
+                        <div className="future-content" style={{color: `deepskyblue`}}>Increases focus and concentration</div> 
+                        </Parallax>
+                        </ParallaxProvider>
+                        <img src={logic} className="future-img"></img>
+                        
+                        <div className="future-content" style={{color: `deepskyblue`}}>Improves logical thinking</div>   
+                        <img src={solve} className="future-img"></img>
+                        <div className="future-content" style={{color: `deepskyblue`}}>Sharpens problem solving</div> 
+                        <img src={creative} className="future-img"></img>
+                        <div className="future-content" style={{color: `deepskyblue`}}>Fosters imagination and creativity</div>  
+                        <ParallaxProvider>
+                        <Parallax y={[20,-20]} tagOuter="figure"> 
+                        <img src={speak} className="future-img"></img>                        
+                        <div className="future-content" style={{color: `deepskyblue`}}>Enhances their communication skills</div>
+                        </Parallax>
+                        </ParallaxProvider>
+                    </div>
+                </div>                
 
+                <div style={{height: `100px`}}></div>
+                
                 <div className="plans-section">
                     <div className="title2">Courses designed for every child</div>
                     <br></br>
@@ -301,10 +334,49 @@ class HomePage extends Component {
                         </ul>
                     </div>                    
                 </div>
-                <br></br>
-                <br></br>
-                <div className='carouselImage' style={{width:'100%',height:'60vh'}}>
+
+                <div style={{height: `150px`}}></div>
+
+                {/* <div className='carouselImage' style={{width:'100%',height:'60vh'}}>
                 <SimpleSlider />
+                </div> */}
+
+                <div className="get-started">
+                    <div className="future-text" style={{color: `white`, fontWeight: `bold`}}>Get started with your free class</div>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <div>
+                        <table className="started-table">
+                            <tr className="started-row">
+                                <td className="started-data">
+                                    <div className="step">STEP 1</div>
+                                    <div className="step-content">Signup by filling in your details</div>
+                                </td>
+                                <td className="started-data">
+                                    <div className="step">STEP 2</div>
+                                    <div className="step-content">Schedule your first class for free</div>
+                                </td>
+                                <td className="started-data">
+                                    <div className="step">STEP 3</div>
+                                    <div className="step-content">Experience the live class with our tutor</div>
+                                </td>
+                            </tr>
+                            <tr className="started-row">
+                                <td className="started-data">
+                                    <div className="step">STEP 4</div>
+                                    <div className="step-content">Subscribe to your favourite coding course</div>
+                                </td>
+                                <td className="started-data">
+                                    <div className="step">STEP 5</div>
+                                    <div className="step-content">Start learning. Happy coding!</div>
+                                </td>
+                            </tr>
+                        </table>
+                        <div className="super-svg">
+                            <img src={superhero} height="100%"></img>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="segment">

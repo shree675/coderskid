@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function Whycoding() {
     return (
         <div>
-            <h1 style={{textAlign:'center', marginBottom:'50px'}}>Why Coding For Kids</h1>
+            <h1 style={{textAlign:'center', marginBottom:'50px', fontFamily: `Quicksand`, fontWeight: `600`}}>Why Coding For Kids</h1>
         <div style={{display:'flex'}}>
             <div className='graph'>
                 {<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_tw4rlrkk.json"  background="transparent"  speed="1"  style={{width: '550px', height: '550px', marginLeft:'25%'}}  loop autoplay></lottie-player>}
@@ -23,8 +23,10 @@ function Whycoding() {
 
             </div>
         </div>
+        
         <div className="kid_will_learn" style={{marginTop:'100px', marginBottom:'100px'}}>
-            <h1 style={{textAlign:'center'}}>Your Kids Will Learn</h1>
+            <h1 style={{textAlign:'center', fontFamily: `Quicksand`, fontWeight: `600`}}>Your Kids Will Learn</h1>
+            <div className="kids-learn-box">
             <div className="to_learn">
                 <div className="learn_item">
                     {<lottie-player src="https://assets5.lottiefiles.com/packages/lf20_xudbbfnj.json"  background="transparent"  speed="1"  style={{width: '100px', height: '200px'}}  loop autoplay></lottie-player>}
@@ -47,6 +49,7 @@ function Whycoding() {
                     <p style={{fontWeight:'bold',fontSize:'1.1rem'}}>Algorithm Thinking</p>
                 </div>
             </div>
+        </div>
         </div>
         </div>
     )
