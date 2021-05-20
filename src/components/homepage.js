@@ -316,7 +316,7 @@ class HomePage extends Component {
                 </div>
 
                 <div className="segment">
-                    <Link to='/' style={{textDecoration: `none`, color: `black`, width: `300px`}}>  
+                    <Link to='/form' style={{textDecoration: `none`, color: `black`, width: `300px`}}>  
                         <div onClick={this.props.ordered} className="free-class-button2" style={{textAlign: `center`}}>                  
                             <div>BOOK A FREE CLASS NOW</div>                                
                         </div>

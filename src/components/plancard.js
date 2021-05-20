@@ -4,7 +4,6 @@ import {Link} from 'react-router-dom';
 class PlanCard extends Component {
     constructor(props){
         super(props);
-        // get card details from props
     }
 
     render(){
@@ -23,7 +22,9 @@ class PlanCard extends Component {
                 <div className="amount"><span className="striked"><strike>{this.props.classesInfo.amount1}</strike></span> {this.props.classesInfo.amount2}</div>
                 <br></br>
                 <div style={{textAlign: `center`}}>
-                    <button onClick={this.props.ordered} className="free-trial-button">Book a free trial</button>
+                    <Link to='/form'>
+                        <button onClick={this.props.ordered} className="free-trial-button">Book a free trial</button>
+                    </Link>
                 </div>
             </div>
         );
