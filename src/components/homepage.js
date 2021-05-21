@@ -214,15 +214,12 @@ class HomePage extends Component {
 
                 <div style={{height: `50px`, backgroundColor: `white`}}></div>
 
-                {/* <ParallaxProvider>
-                <Parallax y={[20,-60]} tagOuter="figure"> */}
-
                 <div className="works">
                     <div className="works-title">Here are some of the best works of our students</div>
                     <br></br>
-                    
-                    <WorkCard img={game1} title={"Super Mario World"} author={"By Sheth Tanaya"} />
-                    
+                    <div style={{display: `flex`, justifyContent: `space-between`}}>
+                    <div style={{flex: `1`}}>
+                    <WorkCard img={game1} title={"Super Mario World"} author={"By Sheth Tanaya"} />                    
                     <WorkCard img={game2} title={"Super Mario World"} author={"By Sheth Tanaya"} />
                     <WorkCard img={game2} title={"Super Mario World"} author={"By Sheth Tanaya"} />
                     <WorkCard img={game1} title={"Super Mario World"} author={"By Sheth Tanaya"} />
@@ -230,21 +227,14 @@ class HomePage extends Component {
                     <WorkCard img={game1} title={"Super Mario World"} author={"By Sheth Tanaya"} />
                     <WorkCard img={game2} title={"Super Mario World"} author={"By Sheth Tanaya"} />
                     <WorkCard img={game1} title={"Super Mario World"} author={"By Sheth Tanaya"} />
-                    
+                    </div>
+                    </div>
                 </div>   
-
-                {/* </Parallax>
-                </ParallaxProvider>              */}
                 <br></br>
-
                 
-
-                <div style={{height: `550px`, width: `100%`, backgroundColor: `white`}}></div>
+                <div style={{height: `65px`, width: `100%`, backgroundColor: `white`}}></div>
 
                 <div style={{height: `100px`}}></div>
-
-                {/* <ParallaxProvider>
-                <Parallax y={[100,-50]} tagOuter="figure"> */}
                 
                 <div className="future-ready">
                     <div className="future-text">Make your child future ready!</div>
@@ -252,7 +242,7 @@ class HomePage extends Component {
                     <div className="future-card">
                         <br></br>
                         <br></br>
-                        <div style={{flex: `1`}}>
+                        <div style={{flex: `1`, margin: `0px`}}>
                         <img src={focus} className="future-img"></img>  
                         <ScrollAnimation
                             animateIn='animate__slideInUp'
@@ -263,7 +253,7 @@ class HomePage extends Component {
                         
                         </ScrollAnimation>
                         </div>
-                        <div style={{flex: `1`}}>
+                        <div style={{flex: `1`, margin: `0px`}}>
                         <img src={logic} className="future-img"></img>
                         <ScrollAnimation
                             animateIn='animate__slideInUp'
