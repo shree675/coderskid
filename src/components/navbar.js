@@ -49,9 +49,9 @@ class Navbar extends Component {
                         </Link>                        
                         </div>
                         <div className="right">
-                        <Link to='/form' style={{textDecoration: `none`, color: `black`}}>  
+                        <Link to={this.props.namelink} style={{textDecoration: `none`, color: `black`}}>  
                             <div onClick={this.props.ordered} className="free-class-button" style={{fontSize: this.state.scrolled?`16px`:`14px`}}>                  
-                                <div>Book a free class</div>                                
+                                <div>{this.props.name}</div>                                
                             </div>
                         </Link>                        
                         </div>

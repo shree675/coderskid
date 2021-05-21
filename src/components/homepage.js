@@ -139,7 +139,7 @@ class HomePage extends Component {
 
         return (
             <div>
-                <Navbar ordered={this.purchaseHandler} />
+                <Navbar ordered={this.purchaseHandler} name="Book a free class" namelink="/form"/>
                 <div style={{height: `30px`}}></div>
                 
                 <div className="jumbotron">
@@ -438,13 +438,14 @@ class HomePage extends Component {
                     </div>
                 </div>
 
-                <div className="segment">
+                {/* <div className="segment">
+                    <h1>Make your child future ready, today</h1>
                     <Link to='/form' style={{textDecoration: `none`, color: `black`, width: `300px`}}>  
                         <div onClick={this.props.ordered} className="free-class-button2" style={{textAlign: `center`}}>                  
                             <div>BOOK A FREE CLASS</div>                                
                         </div>
                     </Link>
-                </div>
+                </div> */}
 
                 <Footer />
             </div>

@@ -1,0 +1,30 @@
+.formpage{
+    background-color: rgb(83, 50, 231);
+    overflow: hidden;
+}
+
+.formpageSection{
+    display: flex;
+    height: 100vh;
+}
+
+.leftFormSection{
+    flex: 0.5;
+    margin-top: 10%;
+    color: whitesmoke;
+    padding-left: 5%;
+}
+
+.formHead{
+    font-size: 3.5rem;
+}
+
+.formPar{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(173, 170, 170);
+}
+
+.rightFormSection{
+    flex: 0.5;
+}

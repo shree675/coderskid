@@ -86,6 +86,7 @@
   text-align: center;
   font-family: 'Quicksand', sans-serif;
   position: relative;
+  background-color: green;
   color: black;
 }
 
@@ -245,17 +246,7 @@ li {
   background-color: #e9896a;
 }
 
-.formInfo {
-  background-color: rgb(100, 70, 233);
-  /* height: 60px;
-  display: flex;  */
-  width: 80%;
-  box-shadow: 10px 10px 8px 10px #888888;
-    border-radius: 45px;
-    padding: 66px;
-    margin-left: 10%;
-    color: whitesmoke;
-}
+
 
 .why-coding {
   width: 100%;
@@ -355,11 +346,11 @@ li {
 
 .kids-learn-box {
   border-radius: 20px;
-  background-color: blanchedalmond;
+  background-color: rgba(243, 100, 56, 0.438);
   margin-left: 10%;
   margin-right: 10%;
   /* border: 2px solid rgb(215,200,180); */
-  border: 2px solid turquoise;
+  /* border: 2px solid turquoise; */
   margin-top: 40px;
 }
 
@@ -498,10 +489,11 @@ li {
 }
 
 .get-started {
-  background-color: #e9896a;
+  background-color: #5a1af0;
   text-align: center;
   padding: 20px;
   margin-bottom: 0px;
+  border-radius: 45px 45px 1px 1px;
   padding-bottom: 150px;
   position: relative;
 }
@@ -528,7 +520,7 @@ li {
 }
 
 .step {
-  color: turquoise;
+  color: rgb(2, 2, 2);
   font-size: 1.2vw;
   font-weight: bold;
   text-shadow: 0px 0px 1px black;
@@ -547,4 +539,8 @@ li {
   bottom: 0px;
   right: 5%;
   height: 25vw;
+}
+
+.segment{
+  background-color: gray;
 }

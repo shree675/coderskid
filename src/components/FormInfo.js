@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form'; 
 import Col from 'react-bootstrap/Col';
 import { Link } from 'react-router-dom';
+import './FormInfo.css'
 
 const FormInfo = (props) => {
 
@@ -68,38 +69,36 @@ const FormInfo = (props) => {
         return(
             <div className="formInfo">
                <Form onSubmit={handleSubmit}>
-               <Form.Row>
+               {/* <Form.Row> */}
     <Col>
                <Form.Label>Child's name</Form.Label>
-      <Form.Control placeholder="Enter Child's name" value={childName} onChange={e => setChildName(e.target.value)} />
+      <Form.Control style={{border:'1px solid gray'}} placeholder="Enter Child's name" value={childName} onChange={e => setChildName(e.target.value)} />
     </Col>
-    <Col>
+    <Col style={{marginTop:'15px'}}>
     <Form.Label>Parent's name</Form.Label>
-      <Form.Control placeholder="Enter Parent's name" value={parentName} onChange={e => setParentName(e.target.value)} />
+      <Form.Control style={{border:'1px solid gray'}} placeholder="Enter Parent's name" value={parentName} onChange={e => setParentName(e.target.value)} />
     </Col>
-  </Form.Row>
+  {/* </Form.Row> */}
 
-  <Form.Row style={{marginTop:'20px'}}>
-    <Form.Group as={Col} controlId="formGridEmail">
+  {/* <Form.Row style={{marginTop:'20px'}}> */}
+    <Form.Group as={Col} controlId="formGridEmail" style={{marginTop:'15px'}}>
       <Form.Label>Parent's Email</Form.Label>
-      <Form.Control type="email" placeholder="Enter Parent's email" value={parentEmail} onChange={e => setParentEmail(e.target.value)} />
+      <Form.Control style={{border:'1px solid gray'}} type="email" placeholder="Enter Parent's email" value={parentEmail} onChange={e => setParentEmail(e.target.value)} />
     </Form.Group>
 
-    <Form.Group  as={Col}  controlId="formGridAddress1">
+    <Form.Group  as={Col}  controlId="formGridAddress1" style={{marginTop:'15px'}}>
     <Form.Label>Parent's number</Form.Label>
-    <Form.Control placeholder="Enter Mobile No." value={parentNum} onChange={e => setParentNum(e.target.value)} />
+    <Form.Control style={{border:'1px solid gray'}} placeholder="Enter Mobile No." value={parentNum} onChange={e => setParentNum(e.target.value)} />
   </Form.Group>
-  </Form.Row>
+  {/* </Form.Row> */}
 
-  <Form.Row>
-    <Form.Group as={Col} controlId="formGridState">
+    <Form.Group as={Col} controlId="formGridState" style={{marginTop:'15px'}}>
       <Form.Label>Child's Class</Form.Label>
-      <Form.Control type="number" placeholder="class" value={childClass} onChange={e => setChildClass(e.target.value)} />
+      <Form.Control style={{border:'1px solid gray'}} type="number" placeholder="class" value={childClass} onChange={e => setChildClass(e.target.value)} />
 
     </Form.Group>
 
-  </Form.Row>
-<div style={{display:'flex', marginTop:'20px'}}>
+<div style={{display:'flex', marginTop:'30px'}}>
 <div onClick={props.ordered} style={{marginRight:'20px'}}>
  <Link to='/'> <Button variant="danger" type="submit">
     Close
