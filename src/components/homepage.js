@@ -431,6 +431,9 @@ class HomePage extends Component {
                                     <div className="step-content">Start learning. Happy coding!</div>
                                 </td>
                             </tr>
+                            <Link to='/form' >    
+                        <button className="headBut3">Book A Free Class Now!</button>
+                        </Link>
                         </table>
                         <div className="super-svg">
                             <img src={superhero} height="100%"></img>

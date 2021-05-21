@@ -323,14 +323,34 @@ li {
   margin-left: 20px;
   margin-top: 30px;
   
-  transition: padding .4s;
+  transition: transform .5s;
 }
 
 .headBut2:hover{
   
   background-color: rgb(62, 37, 226);
   box-shadow: 6px 6px 5px 6px #888888;
-  padding: 20px 30px;
+  transform: scale(1.1,1.1);
+  /* transition-delay: 1s; */
+}
+
+.headBut3{
+  background-color: slateblue;
+  padding: 16px 26px;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  border-radius: 15px;
+  margin-top: 30px;
+  
+  transition: transform .5s;
+}
+
+.headBut3:hover{
+  
+  background-color: rgb(62, 37, 226);
+  box-shadow: 6px 6px 5px 6px #46489c;
+  transform: scale(1.1,1.1);
   /* transition-delay: 1s; */
 }
 
