@@ -24,7 +24,7 @@ function Whycoding() {
             </div>
         </div>
         
-        <div className="kid_will_learn" style={{marginTop:'100px', marginBottom:'100px'}}>
+        <div className="kid_will_learn" style={{marginTop:'50px', marginBottom:'70px'}}>
             <h1 style={{textAlign:'center', fontFamily: `Quicksand`, fontWeight: `600`}}>Your Kids Will Learn</h1>
             <div className="kids-learn-box">
             <div className="to_learn">

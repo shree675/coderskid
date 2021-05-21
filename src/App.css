@@ -170,6 +170,7 @@ li {
   width: 350px;
   padding: 10px;
   height: 480px;
+  position: relative;
 }
 
 .level {
@@ -233,7 +234,9 @@ li {
   padding: 10px;
   font-size: 1vw;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgba(64,224,208,0.7);
+  background-color: rgba(64,224,208,0.9);
+  /* position: relative; */
+  /* bottom: -50px; */
 }
 
 .free-trial-button:hover {
@@ -244,8 +247,6 @@ li {
 .carouselImage{
   background-color: #e9896a;
 }
-
-
 
 .why-coding {
   width: 100%;
@@ -337,8 +338,8 @@ li {
 }
 
 .headBut3{
-  /* background-color: slateblue; */
-  background-color: lightseagreen;
+  background-color: #5759be;
+  /* background-color: lightseagreen; */
   padding: 16px 26px;
   border: none;
   color: white;
@@ -351,8 +352,8 @@ li {
 
 .headBut3:hover{
   
-  /* background-color: rgb(62, 37, 226); */
-  background-color: rgb(50, 245, 200);
+  background-color: rgb(62, 37, 226);
+  /* background-color: rgb(50, 245, 200); */
   box-shadow: 6px 6px 5px 6px #46489c;
   transform: scale(1.1,1.1);
   /* transition-delay: 1s; */
@@ -478,8 +479,8 @@ li {
 
 .future-text {
   font-family: 'Quicksand', sans-serif;
-  font-size: 3.2vw;
-  font-weight: 600;
+  font-size: 3.3vw;
+  font-weight: bold;
 }
 
 .future-subtext {
@@ -492,7 +493,7 @@ li {
 }
 
 .future-img {
-  width: 60%;  
+  width: 70%;  
   margin: 20px;
   padding: 0px;
   border-radius: 20px;
@@ -515,11 +516,13 @@ li {
   padding-left: 0px;
   padding-right: 0px;
   font-weight: bold;
-  color: deepskyblue;
+  /* color: deepskyblue; */
+  color:rgb(52, 150, 127);
 }
 
 .get-started {
-  background-color: #5a1af0;
+  /* background-color: #5a1af0; */
+  background-color: rgb(68, 170, 155);
   text-align: center;
   padding: 20px;
   margin-bottom: 0px;
@@ -550,7 +553,9 @@ li {
 }
 
 .step {
-  color: rgb(2, 2, 2);
+  /* color: rgb(2, 2, 2); */
+  /* color: #e9896a; */
+  color: #5a1af0;
   font-size: 1.2vw;
   font-weight: bold;
   text-shadow: 0px 0px 1px black;
@@ -573,4 +578,14 @@ li {
 
 .segment{
   background-color: gray;
+}
+
+.about-footer {
+  text-decoration: none;
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+
+.about-footer:hover {
+  color:rgb(68, 170, 155);
 }

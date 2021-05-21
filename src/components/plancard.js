@@ -21,7 +21,7 @@ class PlanCard extends Component {
                 <div className="discount">{this.props.classesInfo.discount}</div>
                 <div className="amount"><span className="striked"><strike>{this.props.classesInfo.amount1}</strike></span> {this.props.classesInfo.amount2}</div>
                 <br></br>
-                <div style={{textAlign: `center`}}>
+                <div style={{textAlign: `center`, position: `absolute`, bottom: `20px`, left: `20%`, right: `20%`}}>
                     <Link to='/form'>
                         <button onClick={this.props.ordered} className="free-trial-button">Book a free trial</button>
                     </Link>

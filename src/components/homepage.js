@@ -212,7 +212,7 @@ class HomePage extends Component {
                     </div> */}
                 {/* </div> */}
 
-                <div style={{height: `50px`, backgroundColor: `white`}}></div>
+                <div style={{height: `30px`, backgroundColor: `white`}}></div>
 
                 <div className="works">
                     <div className="works-title">Here are some of the best works of our students</div>
@@ -232,7 +232,7 @@ class HomePage extends Component {
                 </div>   
                 <br></br>
                 
-                <div style={{height: `65px`, width: `100%`, backgroundColor: `white`}}></div>
+                <div style={{height: `40px`, width: `100%`, backgroundColor: `white`}}></div>
 
                 <div style={{height: `100px`}}></div>
                 
@@ -391,7 +391,7 @@ class HomePage extends Component {
                 </div> */}
 
                 <div className="get-started">
-                    <div className="future-text" style={{color: `white`, fontWeight: `bold`}}>Get started with your free class</div>
+                    <div className="future-text" style={{color: `black`, fontWeight: `bold`}}>Get started with your free class</div>
                     <br></br>
                     <br></br>
                     <br></br>

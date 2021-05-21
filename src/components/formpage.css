@@ -1,11 +1,15 @@
 .formpage{
-    background-color: rgb(83, 50, 231);
-    overflow: hidden;
+    /* background-color: rgb(83, 50, 231); */
+    background-color: rgba(59, 170, 153, 0.795);
+    /* overflow: hidden; */
+    height: 100%;
+    padding-bottom: 80px;
 }
 
 .formpageSection{
     display: flex;
-    height: 100vh;
+    /* height: 100vh; */
+    height: fit-content;
 }
 
 .leftFormSection{
@@ -17,14 +21,70 @@
 
 .formHead{
     font-size: 3.5rem;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
 }
 
 .formPar{
     font-size: 1.3rem;
     font-weight: bold;
-    color: rgb(173, 170, 170);
+    /* color: rgb(173, 170, 170); */
+    color: #4a34ca;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
 }
 
 .rightFormSection{
     flex: 0.5;
+    height: fit-content;
+    margin-top: 50px;
+}
+
+.submit-button {
+    width: 95%;
+    box-shadow: 1px 1px 2px gray;
+    background-color: lightseagreen;
+    font-family: 'Montserrat';
+    transition-duration: 0.2s;    
+}
+
+.submit-button:hover {
+    box-shadow: 1px 1px 2px 2px gray;
+    transition-duration: 0.2s;
+    font-weight: 600;
+}
+
+.click-button {
+    box-shadow: 0px 5px 5px 0px rgb(0,0,0,0.25);
+    color: rgb(255, 200, 0);
+    font-weight: 600;
+}
+
+.class-buttons {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.class-button {
+    flex: 1;
+}
+
+.class-button-real {    
+    width: 95%;
+    border-radius: 5px;
+    border: 1px solid turquoise;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    padding-left: 10%;
+    padding-right: 10%;  
+    transition-duration: 0.1s;
+}
+
+.class-button-real:hover {
+    border: 1px solid darkturquoise;
+    box-shadow: 0px 4px 4px 0px rgb(0,0,0,0.25);
+    /* color: rgb(255, 200, 0); */
+    transition-duration: 0.1s;
 }
