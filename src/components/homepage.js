@@ -153,7 +153,7 @@ class HomePage extends Component {
                     Your child can change the world.
                     </ScrollAnimation>
                     </div>
-                    <div className="title" style={{fontSize: `2.5vw`, color: `#458670`,top:'280px'}}>
+                    <div className="titlePara">
                     <ScrollAnimation
                     animateIn='animate__fadeInUp'
                     animateOut='animate__fadeOut'
@@ -162,11 +162,12 @@ class HomePage extends Component {
                     </ScrollAnimation>
                     </div>
                     </div>
-                    <img src={freelancer} style={{zIndex: `1`, width:"62%", position: `relative`, top:'52px'}}></img>
+                    <img className="homeImg" src={freelancer} ></img>
 
                 </div>
 
                 <div style={{height: `100px`, backgroundColor: `white`}}></div>
+                
                     <Whycoding />
                 {/* <div className="why-coding">
                     <div className="why-title">Every <span style={{color: `turquoise`}}>child</span> must have the chance to learn the skills of tomorrow.</div>
@@ -319,7 +320,7 @@ class HomePage extends Component {
                 {/* </Parallax>
                         </ParallaxProvider> */}
 
-                <div style={{height: `400px`}}></div>
+                <div style={{height: `70vh`, width:'100%'}}></div>
                 
                 <div className="plans-section">
                     <div className="title2">Courses designed for every child</div>
@@ -342,16 +343,16 @@ class HomePage extends Component {
                             duration='1'
                             >
                             <div>
-                            <div style={{display:'flex'}}>
-                            <li id="classes1"  style={{margin:'auto 30px auto 30px'}}>                                
+                            <div className="planSetions">
+                            <li id="classes1">                                
                                 <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.basic} />
                             </li>
 
-                            <li id="classes1" style={{margin:'auto 30px auto 30px'}}>
+                            <li id="classes1">
                                 <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.standard} />
                             </li>
 
-                            <li id="classes1" style={{margin:'auto 30px auto 30px'}}>
+                            <li id="classes1">
                                 <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.premium} />
                             </li>
                             </div>
