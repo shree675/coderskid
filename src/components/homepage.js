@@ -168,50 +168,7 @@ class HomePage extends Component {
 
                 <div style={{height: `100px`, backgroundColor: `white`}}></div>
                 
-                    <Whycoding />
-                {/* <div className="why-coding">
-                    <div className="why-title">Every <span style={{color: `turquoise`}}>child</span> must have the chance to learn the skills of tomorrow.</div>
-                    <br></br>
-                    <div className="quote"><i>Children must be taught how to think, not what to think <div className="quote-sub">- Margaret Mead</div></i>
-                    </div>
-                    <br></br>                    
-                    <br></br>
-                    <br></br> */}
-                    {/* <div className="why-box">
-                        <table className="why-table">                            
-                            <tr className="why-row">
-                                <td className="why-data1" style={{color: `lightseagreen`}}>We believe that every young person should have access to the tools and skills to power their own future. We imagine a world where every child, no matter where they live, has the opportunity to shape their future.</td>
-                                <td className="why-data2"><img src={skills} width="20%"></img></td>
-                            </tr>
-                        </table>
-                    </div> */}
-
-                    {/* <div className="why-box">
-                        <table className="why-table">
-                            <tr className="why-row">
-                                <td className="why-data1" style={{color: `deepskyblue`}}>Kids have access to computers every day and they use them as consumers, rather than designers and creators. Let’s change that and teach kids how to think creatively, reason systematically and work collaboratively.</td>
-                                <td className="why-data2"><img src={laptop} width="20%"></img></td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div className="why-box">
-                        <table className="why-table">
-                            <tr className="why-row">
-                                <td className="why-data1" style={{color: `lightseagreen`}}>By joining a Code Club, you’re part of an international network of 15,000 clubs and over 250,000 young people. Your child will gain coding skills, as well as important soft skills like public speaking, confidence and communication.</td>
-                                <td className="why-data2"><img src={confidence} width="28%"></img></td>
-                            </tr>
-                        </table>                        
-                    </div>
-                    <div className="why-box">
-                        <table className="why-table">
-                            
-                            <tr className="why-row">
-                                <td className="why-data1" style={{color: `deepskyblue`}}>A child expands their creativity when they learn how to code. Coding teaches children to experiment and gives them the confidence to be creative. They will improve their ability to think.</td>
-                                <td className="why-data2"><img src={statistic} width="35%"></img></td>
-                            </tr>                            
-                        </table>
-                    </div> */}
-                {/* </div> */}
+                <Whycoding />                
 
                 <div style={{height: `30px`, backgroundColor: `white`}}></div>
 
