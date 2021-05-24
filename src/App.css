@@ -334,8 +334,8 @@ li {
   border-radius: 15px;
   background-color: white;
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.24), 0 2px 10px 0 rgba(0,0,0,0.19);
-  /* width: 350px; */
-  width: 500vw;
+  width: 350px;
+  /* width: 500vw; */
   /* width: 90%; */
   padding: 10px;
   height: 480px;
