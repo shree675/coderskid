@@ -15,7 +15,7 @@ class WorkCard extends Component {
 
     render(){
         return (
-            <div className="workcard-main">
+            <span className="workcard-main">
                 <div style={{height: `150px`, overflow: `hidden`}}>
                     <img src={this.state.img} className="work-img"></img>
                 </div>
@@ -26,7 +26,7 @@ class WorkCard extends Component {
                 <div style={{float: `right`, position: `relative`, bottom: `15px`, right: `10px`}}>
                     <img src={ribbon} height="20px"></img>
                 </div>
-            </div>
+            </span>
         );
     }
 }

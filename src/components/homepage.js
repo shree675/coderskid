@@ -4,13 +4,12 @@ import freelancer from '../assets/freelancer.svg';
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
 import PlanCard from './plancard';
-import SimpleSlider from './SimpleSlider';
 import Footer from './footer';
-import FormInfo from './FormInfo';
-import skills from '../assets/skills.svg';
-import statistic from '../assets/growing-statistic.svg';
-import laptop from '../assets/laptop.svg';
-import confidence from '../assets/confidence.svg';
+// import FormInfo from './FormInfo';
+// import skills from '../assets/skills.svg';
+// import statistic from '../assets/growing-statistic.svg';
+// import laptop from '../assets/laptop.svg';
+// import confidence from '../assets/confidence.svg';
 import {Link} from 'react-router-dom';
 import WorkCard from './workcard';
 import game1 from '../assets/game1.jpeg';
@@ -22,8 +21,6 @@ import logic from '../assets/logic.jpg';
 import solve from '../assets/problemsolving.jpg';
 import speak from '../assets/speaking.jpg';
 import Whycoding from './whycoding';
-import {Parallax} from 'react-scroll-parallax';
-import {ParallaxProvider} from 'react-scroll-parallax';
 
 class HomePage extends Component {
 
@@ -175,22 +172,78 @@ class HomePage extends Component {
                 <div className="works">
                     <div className="works-title">Here are some of the best works of our students</div>
                     <br></br>
-                    <div style={{display: `flex`, justifyContent: `space-between`}}>
-                    <div style={{flex: `1`}}>
-                    <WorkCard img={game1} title={"Super Mario World"} author={"By Sheth Tanaya"} />                    
+                    <div className="works-card-outer1">
+                    <div className="works-card-inner">
+                    <WorkCard img={game1} title={"Super Mario World"} author={"By Sheth Tanaya"} />   
+                
                     <WorkCard img={game2} title={"Super Mario World"} author={"By Sheth Tanaya"} />
+                    
+
                     <WorkCard img={game2} title={"Super Mario World"} author={"By Sheth Tanaya"} />
+
                     <WorkCard img={game1} title={"Super Mario World"} author={"By Sheth Tanaya"} />
+                    
+
                     <WorkCard img={game1} title={"Super Mario World"} author={"By Sheth Tanaya"} />
+
                     <WorkCard img={game1} title={"Super Mario World"} author={"By Sheth Tanaya"} />
+                    
+
                     <WorkCard img={game2} title={"Super Mario World"} author={"By Sheth Tanaya"} />
+
                     <WorkCard img={game1} title={"Super Mario World"} author={"By Sheth Tanaya"} />
                     </div>
                     </div>
+
+                    <div className="works-card-outer2">
+                    <div className="works-card-inner">
+                    <WorkCard img={game1} title={"Super Mario World"} author={"By Sheth Tanaya"} />   
+                
+                    <WorkCard img={game2} title={"Super Mario World"} author={"By Sheth Tanaya"} />
+                    
+
+                    <WorkCard img={game2} title={"Super Mario World"} author={"By Sheth Tanaya"} />
+
+                    <WorkCard img={game1} title={"Super Mario World"} author={"By Sheth Tanaya"} />
+                    
+
+                    <WorkCard img={game1} title={"Super Mario World"} author={"By Sheth Tanaya"} />
+
+                    <WorkCard img={game1} title={"Super Mario World"} author={"By Sheth Tanaya"} />
+                    
+                    </div>
+                    </div>
+                    
+                    <div className="works-card-outer3">
+                    <div className="works-card-inner3">
+                    <WorkCard img={game1} title={"Super Mario World"} author={"By Sheth Tanaya"} /> 
+                    <div></div>  
+                    <div></div>
+                    <div></div>
+                
+                    <WorkCard img={game2} title={"Super Mario World"} author={"By Sheth Tanaya"} />
+                    
+
+                    <WorkCard img={game2} title={"Super Mario World"} author={"By Sheth Tanaya"} />
+
+                    <WorkCard img={game1} title={"Super Mario World"} author={"By Sheth Tanaya"} />
+                    
+                    
+                    <WorkCard img={game1} title={"Super Mario World"} author={"By Sheth Tanaya"} />
+
+                    <WorkCard img={game1} title={"Super Mario World"} author={"By Sheth Tanaya"} />
+                    
+
+                    <WorkCard img={game2} title={"Super Mario World"} author={"By Sheth Tanaya"} />
+
+                    <WorkCard img={game1} title={"Super Mario World"} author={"By Sheth Tanaya"} />
+                    </div>
+                    </div>
+
                 </div>   
                 <br></br>
                 
-                <div style={{height: `40px`, width: `100%`, backgroundColor: `white`}}></div>
+                <div style={{height: `50px`, width: `100%`, backgroundColor: `white`}}></div>
 
                 <div style={{height: `100px`}}></div>
                 
@@ -200,7 +253,7 @@ class HomePage extends Component {
                     <div className="future-card">
                         <br></br>
                         <br></br>
-                        <div style={{flex: `1`, margin: `0px`}}>
+                        <div className="future-outer">
                         <img src={focus} className="future-img"></img>  
                         <ScrollAnimation
                             animateIn='animate__slideInUp'
@@ -268,14 +321,11 @@ class HomePage extends Component {
                         </div>
                         </div>                        
                         <div style={{height: `220px`}}></div>
-                        <div style={{fontSize: `3vw`, fontFamily: `Quicksand`, color: `black`, fontWeight: `bold`}}> So, why wait?</div>                     
+                        <div className="why-wait"> So, why wait?</div>                     
                         <Link to='/form' >    
                         <button className="headBut2">Book A Free Class Now!</button>
                         </Link>
                     </div>
-
-                {/* </Parallax>
-                        </ParallaxProvider> */}
 
                 <div style={{height: `70vh`, width:'100%'}}></div>
                 
@@ -284,6 +334,7 @@ class HomePage extends Component {
                     <br></br>
                     <br></br>
                     <br></br>
+                    <div>
                     <div className="ul-buttons">
                         <button id="c1" className="plan-button" onClick={this.showc1}>Classes 1 to 4</button>
                         <button id="c2" className="plan-button" onClick={this.showc2}>Classes 5 to 8</button>
@@ -291,7 +342,7 @@ class HomePage extends Component {
                     </div>
                     <br></br>
                     <br></br>
-
+                    <div className="plans-display-normal">
                     <div className="ul-act">
                         <ul>
                             <ScrollAnimation
@@ -339,21 +390,53 @@ class HomePage extends Component {
                             </div>
                             </ScrollAnimation>
                         </ul>
-                    </div>                    
+                    </div> 
+                    </div>
+
+                    {/* <div className="plans-display-small">
+                    <ul>
+                            <div>
+                            <div className="planSetions">
+                            <li id="classes1">                                
+                                <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.basic} />
+                            </li>
+                            <li id="classes1">
+                                <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.standard} />
+                            </li>
+                            <li id="classes1">
+                                <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.premium} />
+                            </li>
+                            </div>
+                            </div>
+                            <div>
+                            <li id="classes1">                               
+                                <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.basic} />
+                            </li>
+                            </div>
+                            <div>
+                            <li id="classes2">                               
+                                <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.basic} />
+                            </li>
+                            </div>
+                            <div>
+                            <li id="classes3">                                
+                                <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.basic} />
+                            </li>
+                            </div>
+                        </ul>
+                    </div> */}
+
+                    </div>                                            
                 </div>
 
                 <div style={{height: `150px`}}></div>
-
-                {/* <div className='carouselImage' style={{width:'100%',height:'60vh'}}>
-                <SimpleSlider />
-                </div> */}
 
                 <div className="get-started">
                     <div className="future-text" style={{color: `black`, fontWeight: `bold`}}>Get started with your free class</div>
                     <br></br>
                     <br></br>
                     <br></br>
-                    <div>
+                    <div className="get-started-display">
                         <table className="started-table">
                             <tr className="started-row">
                                 <td className="started-data">
@@ -380,23 +463,43 @@ class HomePage extends Component {
                                 </td>
                             </tr>
                             <Link to='/form' >    
-                        <button className="headBut3">Book A Free Class Now!</button>
-                        </Link>
+                                <button className="headBut3">Book A Free Class Now!</button>
+                            </Link>
                         </table>
+
                         <div className="super-svg">
                             <img src={superhero} height="100%"></img>
                         </div>
                     </div>
-                </div>
 
-                {/* <div className="segment">
-                    <h1>Make your child future ready, today</h1>
-                    <Link to='/form' style={{textDecoration: `none`, color: `black`, width: `300px`}}>  
-                        <div onClick={this.props.ordered} className="free-class-button2" style={{textAlign: `center`}}>                  
-                            <div>BOOK A FREE CLASS</div>                                
+                    <div className="get-started-display-when-small">
+                        <div className="step">STEP1</div>
+                        <div className="step-content">Signup by filling in your details</div>
+                        <div style={{height: `60px`}}></div>
+                        <div className="step">STEP2</div>
+                        <div className="step-content">Schedule your first class for free</div>
+                        <div style={{height: `60px`}}></div>
+                        <div className="step">STEP3</div>
+                        <div className="step-content">Experience the live class with our tutor</div>
+                        <div style={{height: `60px`}}></div>
+                        <div className="step">STEP4</div>
+                        <div className="step-content">Subscribe to your favourite coding course</div>
+                        <div style={{height: `60px`}}></div>
+                        <div className="step">STEP5</div>
+                        <div className="step-content">Start learning. Happy coding!</div>
+                        <div style={{height: `20px`}}></div>
+                        <div style={{textAlign: `center`}}>
+                            <Link to='/form' >    
+                                <button className="headBut3">Book A Free Class Now!</button>
+                            </Link>
                         </div>
-                    </Link>
-                </div> */}
+                        <div style={{height: `20px`}}></div>
+                        <div className="super-svg-small">
+                            <img src={superhero} height="100%"></img>
+                        </div>
+                    </div>
+
+                </div>
 
                 <Footer />
             </div>

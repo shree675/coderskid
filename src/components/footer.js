@@ -10,7 +10,7 @@ function footer() {
                 <p>support@gmail.com</p>
                 </div>   
             <div className="about" style={{marginLeft:'40px'}}>
-                <h3>About The Company</h3>
+                <div className="footer-company">About The Company</div>
                 <p>
                     <Link to='/' style={{textDecoration: `none`}}>
                         <span className="about-footer">Coderskid</span>

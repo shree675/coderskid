@@ -5,17 +5,17 @@ function Whycoding() {
     return (
         <div>
             <h1 style={{textAlign:'center', marginBottom:'50px', fontFamily: `Quicksand`, fontWeight: `bold`,fontSize:'200%'}}>Why Coding For Kids</h1>
-        <div style={{display:'flex'}}>
-            <div className='graph' style={{flex:'0.5'}}>
+        <div className="outer-graph">
+            <div className='graph'>
                 {<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_tw4rlrkk.json"  background="transparent"  speed="1"  style={{width: '100%', height: '70vh', marginLeft:'25%'}}  loop autoplay></lottie-player>}
             </div>
-            <div style={{marginLeft:'13%',flex:'0.5'}}>   <br></br>
+            <div className="inner-coding">   <br></br>
                     <div className="quote"><i>Children must be taught how to think, not what to think <br /><div className="quote-sub">- Margaret Mead</div></i>
                     
                     </div>
                     <br />
                     <br />
-                    <p style ={{fontSize:'1.3rem'}}>We believe that every young person should have access to the tools and skills to power their own future. We imagine a world where every child, no matter where they live, has the opportunity to shape their future.</p>
+                    <p style ={{fontSize:'1.3rem', paddingRight: `13%`}}>We believe that every young person should have access to the tools and skills to power their own future. We imagine a world where every child, no matter where they live, has the opportunity to shape their future.</p>
 
                 <Link to='/form' >    
                 <button className="headBut2">Book A Free Class</button>
