@@ -83,7 +83,7 @@ const FormInfo = (props) => {
         else{
           try{
             element.classList.remove("click-button");
-          }
+          } 
           catch(e){
             // leave it empty
           }

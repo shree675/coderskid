@@ -88,3 +88,61 @@
     /* color: rgb(255, 200, 0); */
     transition-duration: 0.1s;
 }
+
+
+@media screen and (max-width:1020px){
+    
+.formHead{
+    font-size: 3rem;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+.formPar{
+    font-size: 1.1rem;
+    font-weight: bold;
+    /* color: rgb(173, 170, 170); */
+    color: #4a34ca;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+}
+}
+
+
+@media screen and (max-width:620px){
+    .formHead{
+        margin-top: 50px;
+        font-size: 2rem;
+        color: black;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+    }
+    
+    .formPar{
+        font-size: 1rem;
+        font-weight: bold;
+        /* color: rgb(173, 170, 170); */
+        color: #4a34ca;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 20px;
+    }
+
+    .formpageSection{
+        display: flex;
+        /* height: 100vh; */
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .lottieForm{
+        display: none;
+    }
+    /* .leftFormSection{
+        flex: 0.3;
+    }
+    */
+    .rightFormSection{
+        margin-top: 5px;
+    } 
+}

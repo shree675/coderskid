@@ -17,7 +17,9 @@ class FormPage extends Component {
               <div className="leftFormSection">
                 <h2 className="formHead">Schedule a free online coding class. </h2>
                 <p className="formPar">Prepare your child for a digital future</p>
-                {<lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_bcbd2axv.json"  background="transparent"  speed="1"  style={{width: '450px', height: '450px'}}  loop autoplay></lottie-player>}
+                <div className="lottieForm">
+                {<lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_bcbd2axv.json"  background="transparent"  speed="1"  style={{width: '100%', height: '70vh'}}  loop autoplay></lottie-player>}
+                </div>
               </div>
 
                 <div className="rightFormSection">

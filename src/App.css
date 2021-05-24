@@ -75,6 +75,7 @@
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24), 0 8px 20px 0 rgba(0,0,0,0.19);
 }
 
+
 .right {
   width: fit-content;
   float: right;
@@ -92,12 +93,69 @@
 .title {
   font-size: 3.2vw;
   position: absolute;
-  top: 140px;
+  top: 140px; 
   text-align: left;
   margin-left: 5%;
   font-weight: bold;
   width: 40%;
 }
+
+.titlePara{
+  font-size: 2.5vw; 
+  color: #458670;
+  position: absolute;
+  top:45%;
+  text-align: left;
+  margin-left: 5%;
+  font-weight: bold;
+  width: 40%;
+}
+
+.homeImg{
+  z-index: 1;
+  width:62%;
+  position: relative;
+  top:52px;
+}
+
+
+/********************************* HOme Page Media Query *********************************/
+
+
+@media screen and (max-width:620px){
+  
+.jumbotron {
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  position: relative;
+  color: black;
+}
+
+.title {
+  font-size: 3.2vw;
+  position: absolute;
+  top: 100px;
+  text-align: left;
+  margin-left: 5%;
+  font-weight: bold;
+  width: 40%;
+}
+
+.titlePara{
+  top:70%;
+}
+
+.homeImg{
+  z-index: 1;
+  width:62%;
+  position: relative;
+  top:22px;
+}
+
+}
+
+/********************************************************************************************/
+
 
 .plans-section {
   text-align: center;
@@ -148,6 +206,10 @@ ul {
   list-style-type: none;
 }
 
+.planSetions{
+  display: flex;
+}
+
 li {
   text-decoration: none;
 }
@@ -159,7 +221,57 @@ li {
 
 #classes1 {
   text-align: center;
+  margin:auto 30px auto 30px;
 }
+
+
+/******************************** Plan Section Media Query *********************************/
+
+
+@media screen and (max-width:1020px){
+  .planSetions{
+    display: flex;
+    flex-direction: column;
+  }
+
+#classes1 {
+  text-align: center;
+  margin: 50px auto;
+}
+
+}
+
+@media screen and (max-width:620px){
+
+  .ul-buttons {
+    border-radius: 15px;
+    padding: auto 5px;
+  }
+
+.plan-button {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px;
+  font-size: 1.8vw;
+}
+
+  .planSetions{
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul {
+    margin-left: 0px;
+  }
+
+
+#classes1 {
+  text-align: center;
+  margin: 50px auto;
+}
+}
+
+/********************************************************************************************/
 
 
 .main-card {
@@ -243,6 +355,30 @@ li {
   background-color: rgba(64,224,208,1);
   color: white;
 }
+
+/*************************************** Plan Cards Media Query ***********************************/
+
+
+@media screen and (max-width:620px){
+ 
+  .main-card {
+    border-radius: 15px;
+    width: 250px;
+    padding: 10px;
+    height: 480px;
+    position: relative;
+  }
+
+  .free-trial-button {
+    padding: 10px;
+    font-size: 1.8vw;
+  }
+
+}
+
+/********************************************************************************************/
+
+
 
 .carouselImage{
   background-color: #e9896a;
@@ -337,6 +473,39 @@ li {
   /* transition-delay: 1s; */
 }
 
+/***************************************** WHy Coding Media Query ************************************/
+
+
+@media screen and (max-width:620px){
+
+  .quote {   
+    font-size: .8rem;
+  }
+
+  .quote-sub {
+    font-size: .8rem;
+    color: grey;
+  }
+
+  .headBut2{
+    padding: 8px 14px;
+    font-size: .8rem;
+  }
+
+  
+.headBut2:hover{
+  
+  /* background-color: rgb(62, 37, 226); */
+  background-color: rgb(50, 245, 200);
+  box-shadow: 4px 4px 3px 4px #888888;
+  transform: scale(1.1,1.1);
+  /* transition-delay: 1s; */
+}
+}
+
+/********************************************************************************************/
+
+
 .headBut3{
   background-color: #5759be;
   /* background-color: lightseagreen; */
@@ -366,6 +535,7 @@ li {
 
 .learn_item {
   margin: auto 5% auto 5%;
+  font-size: 1.1rem;
 }
 
 .kids-learn-box {
@@ -377,6 +547,65 @@ li {
   /* border: 2px solid turquoise; */
   margin-top: 40px;
 }
+
+
+/****************************************Why Coding Section Media Query ************************************/
+
+
+@media screen and (max-width:1020px){
+  
+.to_learn {
+  display: flex;
+  margin-left: 3%;
+  font-size: 1rem;
+}
+
+.learn_item {
+  margin: auto 4% auto 4%;
+}
+
+.kids-learn-box {
+  border-radius: 20px;
+  background-color: rgba(243, 100, 56, 0.438);
+  margin-left: 10%;
+  margin-right: 10%;
+  /* border: 2px solid rgb(215,200,180); */
+  /* border: 2px solid turquoise; */
+  margin-top: 40px;
+}
+}
+
+
+/******************************* Why coding section Media Query *****************************/
+
+
+@media screen and (max-width:620px){
+  
+  .to_learn {
+    display: flex;
+    margin-left: 3%;
+    font-size: .6rem;
+    flex-direction: column;
+  }
+  
+  .learn_item {
+    margin: auto 3% auto 3%;
+    text-align: center;
+  }
+  
+  .kids-learn-box {
+    border-radius: 20px;
+    background-color: rgba(243, 100, 56, 0.438);
+    margin-left: 10%;
+    margin-right: 10%;
+    /* border: 2px solid rgb(215,200,180); */
+    /* border: 2px solid turquoise; */
+    margin-top: 40px;
+  }
+  }
+
+  /********************************************************************************************/
+
 
 .segment {
   width: 100%;
@@ -589,3 +818,54 @@ li {
 .about-footer:hover {
   color:rgb(68, 170, 155);
 }
+
+/******************************************* Navbar ***********************************/
+
+
+@media screen and (max-width: 1020px) {
+
+  
+  .coderskid {
+    font-size: 20px;
+    padding-left: 15%;
+  }
+  
+  .free-class-button {
+    font-size: 12px;
+    padding: 7px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  
+  .about-us-button {
+    font-size: 12px;
+    padding: 7px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  
+  }
+  
+  @media screen and (max-width:620px) {
+     
+  .coderskid {
+    font-size: 16px;
+    padding-left: 15%;
+  }
+  
+  .free-class-button {
+    font-size: 8px;
+    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  .about-us-button {
+    font-size: 8px;
+    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  }
+
+  /********************************************************************************************/
