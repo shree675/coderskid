@@ -42,15 +42,15 @@ class Navbar extends Component {
                             </Link>
                         </div>
                         <div className="right">
-                        <Link to='/' style={{textDecoration: `none`, color: `black`}}>  
-                            <div className="about-us-button" style={{fontSize: this.state.scrolled?`16px`:`14px`}}>                  
+                        <Link to='/' id="us-link">  
+                            <div className="about-us-button" style={{fontSize: this.state.scrolled?`100%`:`85%`}}>                  
                                 <div>About Us</div>                            
                             </div>
                         </Link>                        
                         </div>
                         <div className="right">
                         <Link to={this.props.namelink} style={{textDecoration: `none`, color: `black`}}>  
-                            <div onClick={this.props.ordered} className="free-class-button" style={{fontSize: this.state.scrolled?`16px`:`14px`}}>                  
+                            <div onClick={this.props.ordered} className="free-class-button" style={{fontSize: this.state.scrolled?`100%`:`80%`}}>
                                 {this.props.name}                                
                             </div>
                         </Link>                        

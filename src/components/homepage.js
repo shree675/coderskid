@@ -1,6 +1,7 @@
 import {Component} from 'react';
 import Navbar from './navbar';
 import freelancer from '../assets/freelancer.svg';
+import freelancer4 from '../assets/freelancer4.png';
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
 import PlanCard from './plancard';
@@ -198,6 +199,23 @@ class HomePage extends Component {
                     </div>
                     <img className="homeImg" src={freelancer} ></img>
 
+                </div>
+
+                <div className="jumbotron-small">
+                    
+                    <div style={{zIndex: `2`}}>
+                    <img className="homeImg-small" src={freelancer4} ></img>
+                    <div className="title-small">                        
+                    Your child can change the world.
+                    </div>
+                    <div className="titlePara-small">
+                    Lorem Ipsum
+                    </div>
+                    <Link to='/form' >    
+                        <button className="headBut4">Book A Free Class</button>
+                    </Link>
+                    </div>
+                    
                 </div>
 
                 <div style={{height: `100px`, backgroundColor: `white`}}></div>
