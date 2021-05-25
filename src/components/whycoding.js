@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 function Whycoding() {
     return (
         <div>
-            <h1 style={{textAlign:'center', marginBottom:'50px', fontFamily: `Quicksand`, fontWeight: `bold`,fontSize:'200%'}}>Why Coding For Kids</h1>
+            <h1 style={{textAlign:'center', marginBottom:'50px', fontFamily: `Quicksand`, fontWeight: `bold`,fontSize:'200%', padding: `10px`}}>Why Coding For Kids</h1>
         <div className="outer-graph">
             <div className='graph'>
                 {<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_tw4rlrkk.json"  background="transparent"  speed="1"  style={{width: '100%', height: '70vh', marginLeft:'25%'}}  loop autoplay></lottie-player>}

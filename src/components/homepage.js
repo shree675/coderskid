@@ -85,6 +85,11 @@ class HomePage extends Component {
 
     }
 
+    componentDidMount(){
+        document.getElementById("cls2").style.display="none";
+        document.getElementById("cls3").style.display="none";
+    }
+
     purchaseHandler = () => {
         this.setState({purchase:true});
     }
@@ -95,43 +100,75 @@ class HomePage extends Component {
 
 
     showc1(){
+        const screen=window.matchMedia("(min-width: 900px)");
         document.getElementById("c1").style.backgroundColor="white";
         document.getElementById("c2").style.backgroundColor="#30bca8";
         document.getElementById("c3").style.backgroundColor="#30bca8";
         document.getElementById("c1").style.color="black";
         document.getElementById("c2").style.color="white";
         document.getElementById("c3").style.color="white";
-        document.getElementById("classes1").style.display="block";
-        document.getElementById("classes2").style.display="none";
-        document.getElementById("classes3").style.display="none";
+        document.getElementById("cls1").style.display="";
+            document.getElementById("cls2").style.display="none";
+            document.getElementById("cls3").style.display="none";
+        // if(screen){
+        //     document.getElementById("cls1").style.display="block";
+        //     document.getElementById("cls2").style.display="none";
+        //     document.getElementById("cls3").style.display="none";
+        // }
+        // else{
+        //     document.getElementById("cls1").style.display="flex";
+        //     document.getElementById("cls2").style.display="none";
+        //     document.getElementById("cls3").style.display="none";
+        // }
     }
 
     showc2(){
+        const screen=window.matchMedia("(min-width: 900px)");
         document.getElementById("c2").style.backgroundColor="white";
         document.getElementById("c1").style.backgroundColor="#30bca8";
         document.getElementById("c3").style.backgroundColor="#30bca8";
         document.getElementById("c2").style.color="black";
         document.getElementById("c1").style.color="white";
         document.getElementById("c3").style.color="white";
-        document.getElementById("classes2").style.display="block";
-        document.getElementById("classes1").style.display="none";
-        document.getElementById("classes3").style.display="none";
+        document.getElementById("cls2").style.display="";
+        document.getElementById("cls1").style.display="none";
+        document.getElementById("cls3").style.display="none";
+        // if(screen){
+        //     document.getElementById("cls2").style.display="block";
+        //     document.getElementById("cls1").style.display="none";
+        //     document.getElementById("cls3").style.display="none";
+        // }
+        // else{
+        //     document.getElementById("cls2").style.display="flex";
+        //     document.getElementById("cls1").style.display="none";
+        //     document.getElementById("cls3").style.display="none";
+        // }
     }
 
     showc3(){
+        const screen=window.matchMedia("(min-width: 900px)");
         document.getElementById("c3").style.backgroundColor="white";
         document.getElementById("c2").style.backgroundColor="#30bca8";
         document.getElementById("c1").style.backgroundColor="#30bca8";
         document.getElementById("c3").style.color="black";
         document.getElementById("c2").style.color="white";
         document.getElementById("c1").style.color="white";
-        document.getElementById("classes3").style.display="block";
-        document.getElementById("classes1").style.display="none";
-        document.getElementById("classes2").style.display="none";
+        document.getElementById("cls3").style.display="";
+        document.getElementById("cls1").style.display="none";
+        document.getElementById("cls2").style.display="none";
+        // if(screen){
+        //     // console.log('hello')
+        //     document.getElementById("cls3").style.display="block";
+        //     document.getElementById("cls2").style.display="none";
+        //     document.getElementById("cls1").style.display="none";
+        // }
+        // else{            
+        //     document.getElementById("cls3").style.display="flex";
+        //     document.getElementById("cls2").style.display="none";
+        //     document.getElementById("cls1").style.display="none";
+        // }
     }
-
    
-
     render(){
 
         return (
@@ -344,7 +381,7 @@ class HomePage extends Component {
                     <br></br>
                     <div className="plans-display-normal">
                     <div className="ul-act">
-                        <ul>
+                        <ul id="plans-ul">
                             <ScrollAnimation
                             animateIn='animate__zoomIn'
                             animateOnce={true} 
@@ -352,79 +389,48 @@ class HomePage extends Component {
                             >
                             <div>
                             <div className="planSetions">
-                            <li id="classes1">                                
+                            <div id="cls1">
+                            <li id="classes1" className="cl1">                                
                                 <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.basic} />
                             </li>
 
-                            <li id="classes1">
+                            <li id="classes1" className="cl1">
                                 <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.standard} />
                             </li>
 
-                            <li id="classes1">
+                            <li id="classes1" className="cl1">
+                                <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.premium} />
+                            </li>  
+                            </div>
+                            <div id="cls2">
+                            <li id="classes2" className="cl2">                               
+                                <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.basic} />
+                            </li>  
+                            <li id="classes2" className="cl2">                               
+                                <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.premium} />
+                            </li>  
+                            <li id="classes2" className="cl2">                               
+                                <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.standard} />
+                            </li>      
+                            </div>
+                            <div id="cls3">
+                            <li id="classes3" className="cl3">                                
+                                <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.standard} />
+                            </li>
+                            <li id="classes3" className="cl3">                                
+                                <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.basic} />
+                            </li>
+                            <li id="classes3" className="cl3">                                
                                 <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.premium} />
                             </li>
                             </div>
                             </div>
-                            </ScrollAnimation>
-                            <ScrollAnimation
-                            animateIn='animate__zoomIn'
-                            animateOnce={true}
-                            duration='1'
-                            >
-                            <div>
-                            <li id="classes2">
-                               
-                                <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.basic} />
-                            </li>
-                            </div>
-                            </ScrollAnimation>
-                            <ScrollAnimation
-                            animateIn='animate__zoomIn'
-                            animateOnce={true}
-                            duration='1'
-                            >
-                            <div>
-                            <li id="classes3">                                
-                                <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.basic} />
-                            </li>
-                            </div>
-                            </ScrollAnimation>
+                        </div>
+                        </ScrollAnimation>
                         </ul>
+                        
                     </div> 
-                    </div>
-
-                    {/* <div className="plans-display-small">
-                    <ul>
-                            <div>
-                            <div className="planSetions">
-                            <li id="classes1">                                
-                                <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.basic} />
-                            </li>
-                            <li id="classes1">
-                                <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.standard} />
-                            </li>
-                            <li id="classes1">
-                                <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.premium} />
-                            </li>
-                            </div>
-                            </div>
-                            <div>
-                            <li id="classes1">                               
-                                <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.basic} />
-                            </li>
-                            </div>
-                            <div>
-                            <li id="classes2">                               
-                                <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.basic} />
-                            </li>
-                            </div>
-                            <div>
-                            <li id="classes3">                                
-                                <PlanCard ordered={this.purchaseHandler} classesInfo={this.state.classes_1_4.basic} />
-                            </li>
-                            </div>
-                        </ul>
-                    </div> */}
+                    </div>                    
 
                     </div>                                            
                 </div>

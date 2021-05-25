@@ -135,25 +135,25 @@
 }
 
 .title {
-  font-size: 5.2vw;
+  font-size: 6.4vw;
   position: absolute;
   /* top: 100px; */
   top: 25%;
   text-align: left;
   margin-left: 5%;
   font-weight: bold;
-  width: 40%;
+  width: 80%;
 }
 
 .titlePara{
-  top: 45%;
-  font-size: 4vw; 
+  top: 38%;
+  font-size: 5.2vw; 
 }
 
 .homeImg{
   z-index: 1;
-  width:62%;
-  height: 80vh;
+  width:100%;
+  /* height: 80vh; */
   position: relative;
   top:22px;
   border-radius: 1px 1px 45px 45px;
@@ -194,11 +194,6 @@
   color: white;
 }
 
-/* .ul-act {
-  width: 100%;
-  text-align: center;
-} */
-
 .ul-buttons {
   border-radius: 15px;
   padding: 10px;
@@ -207,24 +202,11 @@
   margin-left: 20%;
   margin-right: 20%;
 }
-/* 
-.plans-dislplay-normal {
-  text-align: center;
-  width: 100%;
-} */
 
 @media screen and (max-width: 900px) {
   .title2 {
     font-size: 32px;
   }
-
-  /* .plans-display-small {
-    display: block;
-  } */
-
-  /* .plans-display-normal {
-    display: none;
-  } */
 
   .ul-buttons {
     border-radius: 10px;
@@ -264,23 +246,15 @@ li {
 
 #classes2, #classes3 {
   flex: 1;
-  display: none;
-  /* align-items: center; */
-  /* justify-content: center; */
+  /* display: none; */
   text-align: center;
   margin:auto 30px auto 30px;
-  /* margin: 2%; */
-  /* width: 0%; */
 }
 
 #classes1 {
   flex: 1;
-  /* align-items: center; */
-  /* justify-content: center; */
   text-align: center;
   margin:auto 30px auto 30px;
-  /* margin: 2%; */
-  /* width: 0%; */
 }
 
 
@@ -293,17 +267,21 @@ li {
     flex-direction: column;
   }
 
- #classes1 {
+  #classes1, #classes2, #classes3 {
   text-align: center;
   margin: 50px auto;
 } 
+
+#plans-ul {
+  margin: 0px;
+}
 
 }
 
 @media screen and (max-width:620px){
 
   .ul-buttons {
-    padding: auto 5px;
+    padding: 5px;
     border-radius: 5px;
   }
 
@@ -324,8 +302,12 @@ li {
     margin-left: 0px;
   }
 
+  #plans-ul {
+    margin: 0px;
+  }
 
-#classes1 {
+
+#classes1, #classes2, #classes3 {
   text-align: center;
   margin: 50px auto;
 }
@@ -505,7 +487,7 @@ li {
 .quote-sub {
   text-align: right;
   float: right;  
-  margin-right: 5%;
+  margin-right: 15%;
   font-family: sans-serif;
   font-size: 1.5vw;
   color: grey;
@@ -540,7 +522,7 @@ li {
 @media screen and (max-width:620px){
 
   .quote {   
-    font-size: .8rem;
+    font-size: 1rem;
   }
 
   .quote-sub {
@@ -691,6 +673,7 @@ li {
   .outer-graph {
     display: block;
     padding: 0px;
+    margin-right: 10px;
     text-align: center;
   }
   
@@ -871,6 +854,8 @@ li {
 
   .future-subtext {
     font-size: 16px;
+    padding: 15px;
+    margin: 0px;
   }
 }
 
@@ -885,6 +870,7 @@ li {
 
   .future-content {
     font-size: 22px;
+    padding: 15px;
   }
 }
 
@@ -1104,7 +1090,8 @@ li {
     padding-left: 10%;
   }
   .works-title {
-    font-size: 28px;
+    font-size: 25px;
+    margin: 15px;
   }
 }
 
@@ -1158,5 +1145,19 @@ li {
 @media screen and (max-width: 720px) {
   .why-wait {
     font-size: 32px;
+  }
+}
+
+#cls1 {
+  display: flex;
+}
+
+#cls2, #cls3 {
+  display: flex;
+}
+
+@media screen and (max-width: 900px){
+  #cls1, #cls2, #cls3 {
+    display: block;;
   }
 }
