@@ -51,7 +51,7 @@ class Navbar extends Component {
                         <div className="right">
                         <Link to={this.props.namelink} style={{textDecoration: `none`, color: `black`}}>  
                             <div onClick={this.props.ordered} className="free-class-button" style={{fontSize: this.state.scrolled?`16px`:`14px`}}>                  
-                                <div>{this.props.name}</div>                                
+                                {this.props.name}                                
                             </div>
                         </Link>                        
                         </div>

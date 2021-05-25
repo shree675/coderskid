@@ -115,6 +115,7 @@
 .homeImg{
   z-index: 1;
   width:62%;
+  height: 80vh;
   position: relative;
   top:52px;
 }
@@ -130,13 +131,14 @@
   font-family: 'Quicksand', sans-serif;
   position: relative;
   color: black;
+  border-radius: 1px 1px 45px 45px;
 }
 
 .title {
-  font-size: 3.2vw;
+  font-size: 5.2vw;
   position: absolute;
   /* top: 100px; */
-  top: 40%;
+  top: 25%;
   text-align: left;
   margin-left: 5%;
   font-weight: bold;
@@ -144,14 +146,17 @@
 }
 
 .titlePara{
-  top: 64%;
+  top: 45%;
+  font-size: 4vw; 
 }
 
 .homeImg{
   z-index: 1;
   width:62%;
+  height: 80vh;
   position: relative;
   top:22px;
+  border-radius: 1px 1px 45px 45px;
 }
 
 }
@@ -1045,7 +1050,7 @@ li {
   }
   
   .free-class-button {
-    font-size: 12px;
+    font-size: .6rem;
     padding: 7px;
     padding-top: 7px;
     padding-bottom: 7px;
