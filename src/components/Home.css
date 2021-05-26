@@ -20,9 +20,9 @@
 
 .homeh2{
     margin: 0;
-    margin-top: 10%;
+    margin-top: 8%;
     color: rgba(240, 255, 240, 0.938);
-    font-size: 500%;
+    font-size: 450%;
     text-align: center;
     margin-right: 25%;
     margin-left: 25%;
@@ -44,15 +44,15 @@
     width: 25%;
     float: right;
     margin-right: 5%;
-    margin-top: 8%;
+    margin-top: 5%;
     transition-delay: 800ms;
 }
 
 .image2{
-    width: 25%;
-    float: left;
-    margin-left: 5%;
-    margin-top: 8%;
+    width: 35%;
+float:right;
+    margin-right: 15%;
+    margin-top: 2%;
     transition-delay: 500ms;
 }
 
@@ -86,9 +86,9 @@
 
 .image2{
     width: 35%;
-    float: left;
-    margin-left: 5%;
-    margin-top: 15%;
+float:right;
+    margin-right: 15%;
+    margin-top: 5%;
 }
 
 }
@@ -107,7 +107,7 @@
     
     .homeh2{
         margin: 0;
-        margin-top: 60%;
+        margin-top: 50%;
         font-size: 200%;
         text-align: left;
         margin-right: 10%;
@@ -123,10 +123,10 @@
 }
 
 .image2{
-    width: 45%;
-    float: left;
-    margin-left: 5%;
-    margin-top: 30%;
+    width: 65%;
+    float: right;
+    margin-right: 15%;
+    margin-top: 20%;
 }
 
     }
