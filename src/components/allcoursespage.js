@@ -1,8 +1,11 @@
-import {Component, useEffect} from 'react';
+import {Component, useEffect, useState} from 'react';
 import CoursesNav from './coursesnav';
 import './allcoursespage.css';
 import ReactInputPosition, {MOUSE_ACTIVATION} from "react-input-position";
 import {Link} from 'react-router-dom';
+import MovingText from 'react-moving-text';
+import {GreatThings, BeautifulQuestions, SignalNoise, Thursday, ReadySetGo, SunnyMorning} from 'moving-letters';
+import {useSpring, animated} from "react-spring";
 
 const AllCourses = (props) => {
 
@@ -25,19 +28,38 @@ const AllCourses = (props) => {
         }
     });
     
+    // const [key, setKey]=useState(1);
+
+    // const scrolling = useSpring({
+    //     from: {transform: "translate(60%,0)"},
+    //     to: {transform: "translate(-10%,0)"},
+    //     config: {duration: 80000},
+    //     reset: true,
+    //     onRest: () => {
+    //         setKey(key+1);
+    //     }
+    // });
 
     return (
         <div id="courses-page">
             <div style={{position: `relative`, zIndex: `6`}}>
                 <CoursesNav />
                 </div>
-
-                {/* <div id="courses-page-empty" style={{height: window.innerHeight}}></div> */}
                 
                 <div id="follower1"></div>
                 <div id="follower2"></div>
                 
                 <div className="jumbotron-courses" style={{height: window.innerHeight+15}}>
+                <MovingText
+                type="pulse"
+                duration="3000ms"
+                delay="0ms"
+                direction="alternate"
+                timing="ease"
+                iteration="infinite"
+                fillMode="none">
+                <h1 className="homeh1">CODERSKID</h1>
+                </MovingText> 
                     <div className="jtext">
                         <div className="jumbotron-text">The right place</div>
                         <div className="jumbotron-text">for your kids</div>

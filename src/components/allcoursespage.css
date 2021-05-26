@@ -1,5 +1,6 @@
 .jumbotron-courses {
     background-color: cornflowerblue;
+    overflow: hidden;
 }
 
 .course1-page {
@@ -48,10 +49,17 @@
     top: 220px;
     left: 240px;
     width: 40%;
+    position: relative;
+    z-index: 4;
 }
 
 .jumbotron-text {
     margin-top: -15px;
+}
+
+.homeh1 {
+    color: white;
+    opacity: 0.2;
 }
 
 .main-course {
@@ -96,4 +104,11 @@
 
 .view-course-button:hover {
     background-color: lightblue;
+}
+
+.moving-text {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    padding-top: 220px;
 }
