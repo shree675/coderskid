@@ -1,5 +1,5 @@
 .bg1 {
-  background-color: white;   /* white */
+  background-color: rgba(255, 255, 255, 0);   /* white */
   transition-duration: 0.4s;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .coderskid:hover {
-  color: turquoise;
+  color: rgb(255, 255, 255);
   font-weight: 600;
 }
 
@@ -46,10 +46,12 @@
   padding-top: 10px;
   padding-bottom: 10px;  
   transition-duration: 0.5s;
+  transition: transform .5s;
 }
 
 .free-class-button:hover {
   transition-duration: 0.5s;
+  transform: scale(1.1,1.1);
   background-color: white;
   color: lightseagreen;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24), 0 12px 25px 0 rgba(0,0,0,0.19);
@@ -58,18 +60,20 @@
 .about-us-button {
   border-radius: 22px;
   border: 1px solid turquoise;
-  background-color: lightseagreen;
+  background-color: rgb(248, 248, 248);
   font-size: 14px;
   text-align: center;
-  color: white;
+  color: rgb(29, 29, 29);
   padding: 10px;
   padding-top: 10px;
   padding-bottom: 10px;  
   transition-duration: 0.5s;
+  transition: transform .5s;
 }
 
 .about-us-button:hover {
   transition-duration: 0.5s;
+  transform: scale(1.1,1.1);
   background-color: white;
   color: lightseagreen;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24), 0 8px 20px 0 rgba(0,0,0,0.19);
@@ -1119,7 +1123,7 @@ li {
   .coderskid {
     font-size: 18px;
     padding-left: 15%;
-    color: turquoise;
+    color: rgb(255, 255, 255);
     font-weight: 600;
   }
   

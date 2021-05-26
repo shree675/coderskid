@@ -22,6 +22,7 @@ import logic from '../assets/logic.jpg';
 import solve from '../assets/problemsolving.jpg';
 import speak from '../assets/speaking.jpg';
 import Whycoding from './whycoding';
+import Home from './Home';
 
 class HomePage extends Component {
 
@@ -175,7 +176,7 @@ class HomePage extends Component {
         return (
             <div>
                 <Navbar ordered={this.purchaseHandler} name="Book a free class" namelink="/form"/>
-                <div style={{height: `30px`}}></div>
+                {/* <div style={{height: `30px`}}></div>
                 
                 <div className="jumbotron">
                     
@@ -217,9 +218,10 @@ class HomePage extends Component {
                     </div>
                     
                 </div>
-
-                <div style={{height: `100px`, backgroundColor: `white`}}></div>
+ */}
+                <Home />
                 
+                <div style={{height: `100px`, backgroundColor: `white`}}></div>
                 <Whycoding />                
 
                 <div style={{height: `30px`, backgroundColor: `white`}}></div>
