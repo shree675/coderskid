@@ -1,17 +1,64 @@
+.all-courses{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+}
+
+
+.homeh1{
+    margin-top: 0%;
+    padding-top: 8%;
+    left: -8%;
+    transform: scale(.8, 1.8);
+    position: fixed;
+    z-index: 5;
+    font-size: 20rem;
+    text-align: center;
+}
+
 .jumbotron-courses {
-    background-color: cornflowerblue;
+    background-color: rgba(100, 148, 237, 0.932);
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .course1-page {
-    background-color: darkgoldenrod;
+    background-color: rgba(184, 135, 11, 0.932);
+    position: absolute;
+    /* margin-top: 100vh; */
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .course2-page {
-    background-color: darkgreen;
+    background-color: rgba(0, 100, 0, 0.849);
+    /* margin-top: 200vh; */
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .course3-page {
-    background-color: darkorchid;
+    background-color: rgba(153, 50, 204, 0.856);
+    /* margin-top: 300vh; */
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 #follower1 {
@@ -96,4 +143,30 @@
 
 .view-course-button:hover {
     background-color: lightblue;
+}
+
+
+@media screen and (max-width:1020px){
+    
+    .homeh1{
+    margin-top: 20%;
+    margin-left: 5%;
+    position: absolute;
+    z-index: 5;
+    font-size: 12rem;
+    text-align: center;
+}
+}
+
+
+@media screen and (max-width:620px){
+    
+    .homeh1{
+        margin-top: 50%;
+        margin-left: 5%;
+        position: absolute;
+        z-index: 5;
+        font-size: 4.5rem;
+        text-align: center;
+    }
 }
