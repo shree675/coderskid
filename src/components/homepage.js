@@ -450,7 +450,11 @@ class HomePage extends Component {
                     </div> 
                     </div>                    
 
-                    </div>                                            
+                    </div>     
+                    <div style={{height: `45px`}}></div>
+                    <Link to='/allcourses' >    
+                        <button className="headBut2">View all courses ➝</button>
+                    </Link>                                       
                 </div>
 
                 <div style={{height: `150px`}}></div>

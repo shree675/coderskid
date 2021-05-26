@@ -1,0 +1,27 @@
+.main-nav {
+    position: fixed;
+    margin: 15px;
+    margin-top: 25px;
+    z-index: 3;
+    width: 100%;
+    text-align: left;
+}
+
+.left {
+    float: left;
+}
+
+.coderskid2 {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    padding-left: 10px;
+    opacity: 0.8;
+}
+
+.coderskid2:hover {
+    color: turquoise;
+    font-weight: 600;
+    opacity: 1;
+}
