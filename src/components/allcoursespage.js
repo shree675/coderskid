@@ -1,5 +1,6 @@
 import {Component, useEffect, useState} from 'react';
 import CoursesNav from './coursesnav';
+import MovingText from 'react-moving-text'
 import './allcoursespage.css';
 import ReactInputPosition, {MOUSE_ACTIVATION} from "react-input-position";
 import {Link} from 'react-router-dom';
@@ -41,6 +42,7 @@ const AllCourses = (props) => {
     // });
 
     return (
+       
         <div id="courses-page">
             <div style={{position: `relative`, zIndex: `6`}}>
                 <CoursesNav />
@@ -48,7 +50,18 @@ const AllCourses = (props) => {
                 
                 <div id="follower1"></div>
                 <div id="follower2"></div>
-                
+                <div className="all-courses">
+            <MovingText
+              type="flipFromLeftToCenter"
+              duration="8000ms"
+              delay="0ms"
+              direction="normal"
+              timing="ease"
+              iteration="infinite"
+              fillMode="none">
+              <h1 style={{position:'fixed'}} className="homeh1">CODERSKID</h1>
+            </MovingText>
+            
                 <div className="jumbotron-courses" style={{height: window.innerHeight+15}}>
                 <MovingText
                 type="pulse"
@@ -66,6 +79,18 @@ const AllCourses = (props) => {
                         <div className="jumbotron-text">to shape their future.</div>
                     </div>
                 </div>
+                </div>
+                <div className="all-courses">
+            <MovingText
+              type="flipFromLeftToCenter"
+              duration="8000ms"
+              delay="0ms"
+              direction="normal"
+              timing="ease"
+              iteration="infinite"
+              fillMode="none">
+              <h1 style={{position:'fixed'}} className="homeh1">CODERSKID</h1>
+            </MovingText>
                 <div className="course1-page" style={{height: window.innerHeight}}>
                     <div className="main-course">
                         <div className="main-course-text">
@@ -78,9 +103,33 @@ const AllCourses = (props) => {
                         <div className="main-course-image"></div>
                     </div>
                 </div>
+                </div>
+                <div className="all-courses">
+            <MovingText
+              type="flipFromLeftToCenter"
+              duration="8000ms"
+              delay="0ms"
+              direction="normal"
+              timing="ease"
+              iteration="infinite"
+              fillMode="none">
+              <h1 style={{position:'fixed'}} className="homeh1">CODERSKID</h1>
+            </MovingText>
                 <div className="course2-page" style={{height: window.innerHeight}}></div>
+                </div>
+                <div className="all-courses">
+            <MovingText
+              type="flipFromLeftToCenter"
+              duration="8000ms"
+              delay="0ms"
+              direction="normal"
+              timing="ease"
+              iteration="infinite"
+              fillMode="none">
+              <h1 style={{position:'fixed'}} className="homeh1">CODERSKID</h1>
+            </MovingText>
                 <div className="course3-page" style={{height: window.innerHeight}}></div>
-                
+                </div>
             </div>
     );
 }
