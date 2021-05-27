@@ -164,30 +164,7 @@
     transition-duration: 0.4s;
 }
 
-@media screen and (max-width:1020px){
-    
-    .homeh1{
-    margin-top: 20%;
-    margin-left: 5%;
-    position: absolute;
-    z-index: 5;
-    font-size: 12rem;
-    text-align: center;
-}
-}
 
-
-@media screen and (max-width:620px){
-    
-    .homeh1{
-        margin-top: 50%;
-        margin-left: 5%;
-        position: absolute;
-        z-index: 5;
-        font-size: 4.5rem;
-        text-align: center;
-    }
-}
 
 .scroll-down {
     position: absolute;
@@ -210,4 +187,105 @@
     /* margin-top: -5%; */
     position: relative;
     z-index: 12;
+}
+
+
+@media screen and (max-width:1020px){
+    
+    .homeh1{
+    margin-top: 20%;
+    margin-left: 5%;
+    position: absolute;
+    z-index: 5;
+    font-size: 12rem;
+    text-align: center;
+}
+
+
+}
+
+
+@media screen and (max-width:620px){
+    
+    
+.jtext {
+    font-size: 5.2vw;
+    top: 350px;
+    left: 80px;
+    width: 40%;
+}
+
+.jumbotron-text {
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
+    .homeh1{
+        margin-top: 50%;
+        margin-left: 5%;
+        position: absolute;
+        z-index: 5;
+        font-size: 4.5rem;
+        text-align: center;
+    }
+
+    
+.main-course {
+    position: relative;
+    /* z-index: 11; */
+    padding-top: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.main-course-text {
+    margin-top: 115px;
+    width: 50%;
+    float: left;
+    position: relative;
+    z-index: 11;
+}
+
+.view-course-button {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 3.4vw;
+}
+    
+.main-course-name {
+    font-size: 5vw;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 600;
+    position: relative;
+    /* z-index: 11; */
+}
+
+.main-course-content {
+    font-size: 4.2vw;
+    color: #ececec;
+    margin-top: 20px;
+    font-family: sans-serif;
+    position: relative;
+    /* z-index: 11; */
+    /* font-weight: 600; */
+}
+
+.illust1 {
+    width: 40vw;
+    margin-left: 60%;
+    margin-top: -85%;
+    /* position: relative; */
+    z-index: 11;
+}
+
+.illust2 {
+    width: 50vw;
+    margin-left: 20%;
+    margin-top: -5%;
+    /* margin-top: -5%; */
+    position: relative;
+    z-index: 12;
+}
+
 }
