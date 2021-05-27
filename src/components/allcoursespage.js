@@ -1,4 +1,4 @@
-import {Component, useEffect, useState} from 'react';
+import {Component, useEffect, useState, React} from 'react';
 import CoursesNav from './coursesnav';
 import MovingText from 'react-moving-text'
 import './allcoursespage.css';
@@ -10,8 +10,12 @@ import expdesign from '../assets/expdesign.svg';
 import mobileapps from '../assets/mobileapps.svg';
 import mobiledev from '../assets/mobiledev.svg';
 import designteam from '../assets/designteam.svg';
+import ReactPageScroller from 'react-page-scroller';
+import {Pager} from "react-pager";
 
 const AllCourses = () => {
+
+    document.body.scrollTop=document.documentElement.scrollTop=0;    
 
     useEffect(()=>{
         try{
@@ -30,24 +34,30 @@ const AllCourses = () => {
         catch(error){
             console.log(error);
         }
-        var lastScrollTop = 0;
+        // var lastScrollTop = 0;
         
-        var element=document.getElementById("courses-page");
-        window.addEventListener("scroll", function(){
-        var st = window.pageYOffset || document.documentElement.scrollTop;
-        if(st>lastScrollTop){
-            console.log('down');
-            // this.setTimeout(()=>{
-            //     window.scrollTo(0,window.scrollY);
-            // },1000);                     
-        }
-        else{
-            // upscroll code
-            console.log('up');
-        }
-        lastScrollTop = st <= 0 ? 0 : st;
-        },false);
+        // var element=document.getElementById("courses-page");
+        // window.addEventListener("scroll", function(){
+        // var st = element.pageYOffset || document.documentElement.scrollTop;
+        // if(st>lastScrollTop){
+        //     console.log('down');
+        //     // this.setTimeout(()=>{
+        //     element.scrollTo(0,window.innerHeight);
+        //     // console.log(element);
+        //     // },1000);
+        // }
+        // else{
+        //     // upscroll code
+        //     console.log('up');
+        // }
+        // lastScrollTop = st <= 0 ? 0 : st;
+        // },false);
     });
+
+    function scrollDown(){
+        console.log('scroll');
+        window.scrollTo(0,window.innerHeight);
+    }
 
     const calc=(x,y)=>[x-window.innerWidth/2,y-window.innerHeight/2];
     const trans1=(x,y)=>`translate3d(${x/15}px,${y/15}px,0)`;
@@ -55,7 +65,7 @@ const AllCourses = () => {
 
     const [props, set]=useSpring(()=>({xy: [0,0], config: {mass: 10, tension: 550, friction: 140}}));
 
-    return (
+    return (        
        
         <div id="courses-page">
             <div style={{position: `relative`, zIndex: `10`}}>
@@ -64,7 +74,10 @@ const AllCourses = () => {
                 
             <div id="follower1"></div>
             <div id="follower2"></div>
-            <div style={{overflow: `hidden`}}>            
+
+            {/* <React.Fragment> */}
+            {/* <ReactPageScroller> */}
+            <div style={{overflow: `hidden`, height: `100vh`}}>
                 <div className="jumbotron-courses" style={{height: window.innerHeight+15}}>
                 <MovingText
                 type="pulse"
@@ -82,14 +95,16 @@ const AllCourses = () => {
                         <div className="jumbotron-text">to shape their future.</div>
                     </div>
                     <div className="scroll-down">
-                    {<lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_04wi8isl.json"  background="transparent"  speed="1"  style={{width: '50px', height: '50px', textAlign: `center`}}  loop autoplay></lottie-player>}
+                        <button className="scroll-down-button" onClick={scrollDown}>
+                        {<lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_04wi8isl.json"  background="transparent"  speed="1"  style={{width: '50px', height: '50px', textAlign: `center`}}  loop autoplay></lottie-player>}
+                        </button>
                     </div>
                 </div>
             </div>
+            {/* </ReactPageScroller> */}
 
-
-
-            <div style={{overflow: `hidden`}}>
+            {/* <ReactPageScroller> */}
+            <div style={{overflow: `hidden`, height: `100vh`}}>
                 <div className="course1-page" style={{height: window.innerHeight}}>
                     <div className="main-course">
                         <div className="main-course-text">
@@ -111,10 +126,10 @@ const AllCourses = () => {
                     </div>
                 </div>
             </div>
+            {/* </ReactPageScroller> */}
 
-
-
-            <div style={{overflow: `hidden`}}>
+                    {/* <ReactPageScroller> */}
+            <div style={{overflow: `hidden`, height: `100vh`}}>
                 <div className="course2-page" style={{height: window.innerHeight}}>
                     <div className="main-course">
                         <div className="main-course-text">
@@ -136,10 +151,10 @@ const AllCourses = () => {
                     </div>
                 </div>
             </div>
+{/* </ReactPageScroller> */}
 
-
-
-            <div style={{overflow: `hidden`}}>
+{/* <ReactPageScroller> */}
+            <div style={{overflow: `hidden`, height: `100vh`}}>
                 <div className="course3-page" style={{height: window.innerHeight}}>
                     <div className="main-course">
                         <div className="main-course-text">
@@ -161,7 +176,8 @@ const AllCourses = () => {
                     </div>
                 </div>
             </div>
-
+            {/* </ReactPageScroller> */}
+            {/* </React.Fragment> */}
 
             </div>
     );
