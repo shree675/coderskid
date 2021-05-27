@@ -1,11 +1,11 @@
 .all-courses{
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     background-color: rgb(255, 255, 255);
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
-
 
 .homeh1{
     margin-top: 0%;
@@ -20,45 +20,26 @@
 
 .jumbotron-courses {
     background-color: rgba(100, 148, 237, 0.932);
-    position: absolute;
+    /* position: absolute;
     z-index: 10;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0; */
 }
 
 .course1-page {
-    background-color: rgba(184, 135, 11, 0.932);
-    position: absolute;
-    /* margin-top: 100vh; */
-    z-index: 10;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    background-color: rgba(233, 171, 15, 0.932);
 }
 
 .course2-page {
-    background-color: rgba(0, 100, 0, 0.849);
-    /* margin-top: 200vh; */
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    /* background-color: rgba(30, 194, 30, 0.849); */
+    background-color:rgb(93, 79, 182);
+    /* background-color: rgba(163, 59, 214, 0.856); */
 }
 
 .course3-page {
-    background-color: rgba(153, 50, 204, 0.856);
-    /* margin-top: 300vh; */
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    background-color:rgb(81, 183, 218);
 }
 
 #follower1 {
@@ -69,7 +50,7 @@
     position: absolute;
     opacity: 0.8;
     z-index: 5;
-    transition-duration: 0.08s;
+    transition-duration: 0.2s;
     transform: translate(-50%,-50%);
 }
 
@@ -81,7 +62,7 @@
     opacity: 0.6;
     position: absolute;
     z-index: 4;
-    transition-duration: 0.15s;
+    transition-duration: 0.4s;
     transform: translate(-50%,-50%);
 }
 
@@ -110,17 +91,27 @@
 
 .main-course {
     position: relative;
-    z-index: 6;
+    /* z-index: 11; */
     padding-top: 100px;
     padding-left: 140px;
     padding-right: 140px;
-    display: flex;
-    justify-content: space-between;
 }
 
 .main-course-text {
     margin-top: 115px;
-    flex: 0.5;
+    width: 50%;
+    float: left;
+    position: relative;
+    z-index: 11;
+}
+
+.main-course-img {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    /* margin-bottom: 10%; */
+    /* margin-top: 30%; */
+    height: 100vh;
 }
 
 .main-course-name {
@@ -128,30 +119,50 @@
     font-family: 'Montserrat', sans-serif;
     color: white;
     font-weight: 600;
+    position: relative;
+    /* z-index: 11; */
 }
 
 .main-course-content {
     font-size: 1.2vw;
-    color: #cccccc;
+    color: #ececec;
     margin-top: 20px;
     font-family: sans-serif;
+    position: relative;
+    /* z-index: 11; */
     /* font-weight: 600; */
 }
 
 .view-course-button {
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
     font-size: 1.4vw;
     color: inherit;
     margin-top: 20px;
     background-color: white;
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 4px;    
     width: fit-content;
+    position: relative;
+    z-index: 11;
+    transition-duration: 0.4s;
+    font-weight: 600;
+}
+
+.view-course-button:hover span:after {
+    content: '\00bb';
+    transition: 0.5s;
+    position: absolute;
+    right: 15px;
+    transition-duration: 0.4s;
 }
 
 .view-course-button:hover {
-    background-color: lightblue;
+    opacity: 0.9;    
+    padding-right: 35px;
+    padding-left: 15px;
+    transition-duration: 0.4s;
 }
-
 
 @media screen and (max-width:1020px){
     
@@ -176,4 +187,27 @@
         font-size: 4.5rem;
         text-align: center;
     }
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+}
+
+.illust1 {
+    width: 20vw;
+    margin-left: 75%;
+    margin-top: -25%;
+    /* position: relative; */
+    z-index: 11;
+}
+
+.illust2 {
+    width: 20vw;
+    margin-left: 55%;
+    margin-top: -10%;
+    /* margin-top: -5%; */
+    position: relative;
+    z-index: 12;
 }
