@@ -8,6 +8,10 @@ class FormPage extends Component {
         super(props);
     }
 
+    componentDidMount(){
+        document.body.scrollTop=document.documentElement.scrollTop=0;
+    }
+
     render(){
         return (
             <div className="formpage">

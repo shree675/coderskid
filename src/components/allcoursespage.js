@@ -19,7 +19,7 @@ import {FullPage, Slide} from 'react-full-page';
 
 const AllCourses = () => {
 
-    document.body.scrollTop=document.documentElement.scrollTop=0;    
+    document.body.scrollTop=document.documentElement.scrollTop=0;
 
     useEffect(()=>{
         try{
