@@ -77,8 +77,8 @@ const AllCourses = () => {
 
             {/* <React.Fragment> */}
             {/* <ReactPageScroller> */}
-            <div style={{overflow: `hidden`, height: `95vh`}}>
-                <div className="jumbotron-courses" style={{height: '100vh'}}>
+            <div style={{overflow: `hidden`}}>
+                <div className="jumbotron-courses" style={{height: window.innerHeight+15}}>
                 <MovingText
                 type="pulse"
                 duration="3000ms"
@@ -104,7 +104,7 @@ const AllCourses = () => {
             {/* </ReactPageScroller> */} 
 
             {/* <ReactPageScroller> */}
-            <div style={{overflow: `hidden`, height: `100vh`}}>
+            <div style={{overflow: `hidden`}}>
                 <div className="course1-page" style={{height: '100vh'}}>
                     <div className="main-course">
                         <div className="main-course-text">
