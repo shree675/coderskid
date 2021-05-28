@@ -177,20 +177,21 @@
 
 
 .scroll-down {
-    position: absolute;
-    bottom: 50px;
+    position: relative;
+    /* bottom: 50px; */
     /* left: 50%; */
     text-align: center;
     width: 100%;
-    z-index: 15;
+    z-index: 28;
 }
 
 .scroll-down-button {
     position: relative;
-    z-index: 15;
+    bottom: 0px;
+    z-index: 28;
     border: none;
     text-align: center;
-    background-color: rgba(100, 148, 237, 0.1);
+    background-color: rgba(100, 148, 237, 0);
 }
 
 .illust1 {

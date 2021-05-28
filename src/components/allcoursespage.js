@@ -10,8 +10,12 @@ import expdesign from '../assets/expdesign.svg';
 import mobileapps from '../assets/mobileapps.svg';
 import mobiledev from '../assets/mobiledev.svg';
 import designteam from '../assets/designteam.svg';
-import ReactPageScroller from 'react-page-scroller';
+// import ReactPageScroller from 'react-page-scroller';
 import {Pager} from "react-pager";
+// import MyComponent from 'react-full-page-scroller';
+// import 'react-full-page-scroller/dist/index.css';
+// import ScrollableContainer from "react-full-page-scroll";
+import {FullPage, Slide} from 'react-full-page';
 
 const AllCourses = () => {
 
@@ -33,7 +37,8 @@ const AllCourses = () => {
         }
         catch(error){
             console.log(error);
-        }
+        }        
+
         // var lastScrollTop = 0;
         
         // var element=document.getElementById("courses-page");
@@ -41,10 +46,11 @@ const AllCourses = () => {
         // var st = element.pageYOffset || document.documentElement.scrollTop;
         // if(st>lastScrollTop){
         //     console.log('down');
-        //     // this.setTimeout(()=>{
-        //     element.scrollTo(0,window.innerHeight);
-        //     // console.log(element);
-        //     // },1000);
+        //     window.scrollTo(0,window.innerHeight+window.scrollY);
+        //     // disableBodyScroll({savePosition: false});
+        //     this.setTimeout(()=>{
+        //         // enableBodyScroll();
+        //     },500);
         // }
         // else{
         //     // upscroll code
@@ -54,9 +60,23 @@ const AllCourses = () => {
         // },false);
     });
 
-    function scrollDown(){
-        console.log('scroll');
+    function scrollDown1(){
+        // console.log('scroll');
         window.scrollTo(0,window.innerHeight);
+    }
+
+    function scrollDown2(){
+        // console.log('scroll');
+        window.scrollTo(0,2*window.innerHeight);
+    }
+
+    function scrollDown3(){
+        // console.log('scroll');
+        window.scrollTo(0,3*window.innerHeight);
+    }
+
+    function PageComponent({children}){
+        return (<div>{children}</div>)
     }
 
     const calc=(x,y)=>[x-window.innerWidth/2,y-window.innerHeight/2];
@@ -75,8 +95,6 @@ const AllCourses = () => {
             <div id="follower1"></div>
             <div id="follower2"></div>
 
-            {/* <React.Fragment> */}
-            {/* <ReactPageScroller> */}
             <div style={{overflow: `hidden`}}>
                 <div className="jumbotron-courses" style={{height: window.innerHeight+15}}>
                 <MovingText
@@ -94,16 +112,16 @@ const AllCourses = () => {
                         <div className="jumbotron-text">for your kids</div>
                         <div className="jumbotron-text">to shape their future.</div>
                     </div>
-                    <div className="scroll-down">
-                        <button className="scroll-down-button" onClick={scrollDown}>
-                        {<lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_04wi8isl.json"  background="transparent"  speed="1"  style={{width: '50px', height: '50px', textAlign: `center`}}  loop autoplay></lottie-player>}
+                    <div className="scroll-down" style={{marginTop: window.innerHeight/1.6}}>
+                        <button className="scroll-down-button" onClick={scrollDown1}>
+                        {<lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_04wi8isl.json"  background="transparent" speed="1" style={{width: '50px', height: '50px', textAlign: `center`}}  loop autoplay></lottie-player>}
                         </button>
                     </div>
                 </div>
             </div>
-            {/* </ReactPageScroller> */} 
 
-            {/* <ReactPageScroller> */}
+
+
             <div style={{overflow: `hidden`}}>
                 <div className="course1-page" style={{height: '100vh'}}>
                     <div className="main-course">
@@ -123,12 +141,18 @@ const AllCourses = () => {
                             </animated.div>
                         </div>
                         <div className="main-course-image"></div>
+                        <div className="scroll-down" style={{marginTop: `-200px`}}>
+                            <button className="scroll-down-button" onClick={scrollDown2}>
+                            {<lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_04wi8isl.json"  background="transparent"  speed="1"  style={{width: '50px', height: '50px', textAlign: `center`}}  loop autoplay></lottie-player>}
+                            </button>
+                        </div>
                     </div>
+                    
                 </div>
             </div>
-            {/* </ReactPageScroller> */}
 
-                    {/* <ReactPageScroller> */}
+
+
             <div style={{overflow: `hidden`, height: `100vh`}}>
                 <div className="course2-page" style={{height: '100vh'}}>
                     <div className="main-course">
@@ -148,12 +172,17 @@ const AllCourses = () => {
                             </animated.div>
                         </div>
                         <div className="main-course-image"></div>
+                        <div className="scroll-down" style={{marginTop: `-200px`}}>
+                            <button className="scroll-down-button" onClick={scrollDown3}>
+                            {<lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_04wi8isl.json"  background="transparent"  speed="1"  style={{width: '50px', height: '50px', textAlign: `center`}}  loop autoplay></lottie-player>}
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-{/* </ReactPageScroller> */}
 
-{/* <ReactPageScroller> */}
+
+
             <div style={{overflow: `hidden`, height: `100vh`}}>
                 <div className="course3-page" style={{height: '100vh'}}>
                     <div className="main-course">
@@ -176,8 +205,6 @@ const AllCourses = () => {
                     </div>
                 </div>
             </div>
-            {/* </ReactPageScroller> */}
-            {/* </React.Fragment> */}
 
             </div>
     );
