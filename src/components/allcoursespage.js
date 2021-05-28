@@ -77,8 +77,8 @@ const AllCourses = () => {
 
             {/* <React.Fragment> */}
             {/* <ReactPageScroller> */}
-            <div style={{overflow: `hidden`, height: `100vh`}}>
-                <div className="jumbotron-courses" style={{height: window.innerHeight+15}}>
+            <div style={{overflow: `hidden`, height: `95vh`}}>
+                <div className="jumbotron-courses" style={{height: '100vh'}}>
                 <MovingText
                 type="pulse"
                 duration="3000ms"
@@ -101,11 +101,11 @@ const AllCourses = () => {
                     </div>
                 </div>
             </div>
-            {/* </ReactPageScroller> */}
+            {/* </ReactPageScroller> */} 
 
             {/* <ReactPageScroller> */}
             <div style={{overflow: `hidden`, height: `100vh`}}>
-                <div className="course1-page" style={{height: window.innerHeight}}>
+                <div className="course1-page" style={{height: '100vh'}}>
                     <div className="main-course">
                         <div className="main-course-text">
                             <div className="main-course-name">INTRODUCTION TO CODING</div>
@@ -130,7 +130,7 @@ const AllCourses = () => {
 
                     {/* <ReactPageScroller> */}
             <div style={{overflow: `hidden`, height: `100vh`}}>
-                <div className="course2-page" style={{height: window.innerHeight}}>
+                <div className="course2-page" style={{height: '100vh'}}>
                     <div className="main-course">
                         <div className="main-course-text">
                             <div className="main-course-name">DESIGN AND CREATE</div>
@@ -155,7 +155,7 @@ const AllCourses = () => {
 
 {/* <ReactPageScroller> */}
             <div style={{overflow: `hidden`, height: `100vh`}}>
-                <div className="course3-page" style={{height: window.innerHeight}}>
+                <div className="course3-page" style={{height: '100vh'}}>
                     <div className="main-course">
                         <div className="main-course-text">
                             <div className="main-course-name">APP &amp; GAME DEVELOPMENT</div>

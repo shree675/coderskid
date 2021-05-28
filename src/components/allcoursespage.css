@@ -99,7 +99,7 @@
     opacity: 0.2;
 }
 
-.main-course {
+.main-course { 
     position: relative;
     /* z-index: 11; */
     padding-top: 100px;
@@ -304,6 +304,7 @@
     /* margin-top: -5%; */
     position: relative;
     z-index: 12;
+    display: none;
 }
 
 }
