@@ -36,7 +36,7 @@ class Navbar extends Component {
                     <div className={this.state.scrolled?"navbar-init":"navbar-scrolled"}>
                         <div style={{float: `left`}}>
                             <Link to='/' style={{textDecoration: `none`, color: `black`}}>
-                                <div style={{margin: `0px`, paddingBottom: this.state.scrolled?`15px`:`12px`, color: this.state.scrolled?`black`:`white`}}>                                    
+                                <div style={{margin: `0px`, paddingBottom: this.state.scrolled?`15px`:`12px`}}>                                    
                                     <span className="coderskid">Coderskid</span>
                                 </div>
                             </Link>

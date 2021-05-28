@@ -1117,14 +1117,23 @@ li {
   padding: 40px;
   text-align: center;
 } */
+
+.coderskid:hover {
+  color: grey !important;
+}
   
 @media screen and (max-width:620px) {
      
   .coderskid {
     font-size: 18px;
     padding-left: 15%;
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
+    color: black !important;
     font-weight: 600;
+  }
+
+  .coderskid:hover {
+    color:grey !important;
   }
   
   .free-class-button {
