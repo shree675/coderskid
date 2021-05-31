@@ -16,6 +16,18 @@ import {Pager} from "react-pager";
 // import 'react-full-page-scroller/dist/index.css';
 // import ScrollableContainer from "react-full-page-scroll";
 import {FullPage, Slide} from 'react-full-page';
+import google from '../assets/google.svg';
+import slides from '../assets/slides.svg';
+import gdocs from '../assets/gdocs.svg';
+import spreadsheet from '../assets/spreadsheet.svg';
+import canva1 from '../assets/canva1.svg';
+import canva2 from '../assets/canva2.svg';
+import presentation from '../assets/presentation.jpg';
+// import pres from '../assets/pres.jpg';
+import pres1 from '../assets/pres1.svg';
+import pres2 from '../assets/pres2.svg';
+import speak from '../assets/speak.svg';
+import canva from '../assets/canva.svg';
 
 const AllCourses = () => {
 
@@ -67,21 +79,33 @@ const AllCourses = () => {
 
     function scrollDown2(){
         // console.log('scroll');
-        window.scrollTo(0,2*window.innerHeight);
+        window.scrollTo(0,2*window.innerHeight+2);
     }
 
     function scrollDown3(){
         // console.log('scroll');
-        window.scrollTo(0,3*window.innerHeight);
+        window.scrollTo(0,3*window.innerHeight+2);
     }
 
-    function PageComponent({children}){
-        return (<div>{children}</div>)
+    function scrollDown4(){
+        // console.log('scroll');
+        window.scrollTo(0,4*window.innerHeight+2);
+    }
+
+    function scrollDown5(){
+        // console.log('scroll');
+        window.scrollTo(0,5*window.innerHeight+2);
+    }
+
+    function scrollDown6(){
+        // console.log('scroll');
+        window.scrollTo(0,6*window.innerHeight+2);
     }
 
     const calc=(x,y)=>[x-window.innerWidth/2,y-window.innerHeight/2];
     const trans1=(x,y)=>`translate3d(${x/15}px,${y/15}px,0)`;
     const trans2=(x,y)=>`translate3d(${x/8}px,${y/8}px,0)`;
+    const trans3=(x,y)=>`translate3d(${x/6}px,${y/6}px,0)`;
 
     const [props, set]=useSpring(()=>({xy: [0,0], config: {mass: 10, tension: 550, friction: 140}}));
 
@@ -202,11 +226,104 @@ const AllCourses = () => {
                             </animated.div>
                         </div>
                         <div className="main-course-image"></div>
+                        <div className="scroll-down" style={{marginTop: `-200px`}}>
+                            <button className="scroll-down-button" onClick={scrollDown4}>
+                            {<lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_04wi8isl.json"  background="transparent"  speed="1"  style={{width: '50px', height: '50px', textAlign: `center`}}  loop autoplay></lottie-player>}
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
 
+
+
+            <div style={{overflow: `hidden`, height: `100vh`}}>
+                <div className="course4-page" style={{height: '100vh'}}>
+                    <div className="main-course">
+                        <div className="main-course-text">
+                            <div className="main-course-name">DESIGN WITH <img src={canva} height="60" style={{marginTop: `-5px`}}></img></div>
+                            <div className="main-course-content">This course is your one-stop shop if you want to learn how to get started with Canva but also start building your visual brand.</div>                            
+                            <Link to='/' style={{textDecoration: `none`, color: ``, position: `relative`, zIndex: `11`}}>
+                                <div className="view-course-button" style={{color: `rgb(216, 125, 95)`, position: `relative`, zIndex: `11`}}><span>View Course</span></div>
+                            </Link>
+                        </div>
+                        <div className="main-course-img" onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}>
+                            <animated.div style={{ transform: props.xy.to(trans1) }}>
+                            <img className="illust1" src={canva1}></img>
+                            </animated.div>
+                            <animated.div style={{ transform: props.xy.to(trans2) }}>
+                            <img className="illust2" src={canva2}></img>
+                            </animated.div>
+                        </div>
+                        <div className="main-course-image"></div>
+                        <div className="scroll-down" style={{marginTop: `-200px`}}>
+                            <button className="scroll-down-button" onClick={scrollDown5}>
+                            {<lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_04wi8isl.json"  background="transparent"  speed="1"  style={{width: '50px', height: '50px', textAlign: `center`}}  loop autoplay></lottie-player>}
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+
+
+            <div style={{overflow: `hidden`, height: `100vh`}}>
+                <div className="course5-page" style={{height: '100vh'}}>
+                    <div className="main-course">
+                        <div className="main-course-text">
+                            <div className="main-course-name"><img src={google} height="40" style={{marginTop: `-5px`}}></img> SUITE</div>
+                            <div className="main-course-content">Enthusiasts will learn how to collaborate using different, free G-Suite Apps, including Gmail, Google Forms, Google Calendar, a shared Google Drive, and how to work on shared documents (Docs, Sheets, Slides, etc.).</div>                            
+                            <Link to='/' style={{textDecoration: `none`, color: ``, position: `relative`, zIndex: `11`}}>
+                                <div className="view-course-button" style={{color: `#4e4e4e`, position: `relative`, zIndex: `11`}}><span>View Course</span></div>
+                            </Link>
+                        </div>
+                        <div className="main-course-img" onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}>
+                            <animated.div style={{ transform: props.xy.to(trans1) }}>
+                            <img className="illust4" src={slides}></img>
+                            </animated.div>
+                            <animated.div style={{ transform: props.xy.to(trans2) }}>
+                            <img className="illust2" src={spreadsheet}></img>
+                            </animated.div>
+                            <animated.div style={{ transform: props.xy.to(trans3) }}>
+                            <img className="illust3" src={gdocs}></img>
+                            </animated.div>
+                        </div>
+                        <div className="main-course-image"></div>
+                        <div className="scroll-down" style={{marginTop: `-200px`}}>
+                            <button className="scroll-down-button" onClick={scrollDown6}>
+                            {<lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_04wi8isl.json"  background="transparent"  speed="1"  style={{width: '50px', height: '50px', textAlign: `center`}}  loop autoplay></lottie-player>}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div style={{overflow: `hidden`, height: `100vh`}}>
+                <div className="course6-page" style={{height: '100vh'}}>
+                    <div className="main-course">
+                        <div className="main-course-text">
+                            <div className="main-course-name">PRESENTATION SKILLS</div>
+                            <div className="main-course-content">Our courses are designed for anyone from a rookie speaker to an established presenter. Whether you’re presenting an idea or a product or a complicated issue, this Specialization gives you tools to make it right.</div>
+                            <Link to='/' style={{textDecoration: `none`, color: ``, position: `relative`, zIndex: `11`}}>
+                                <div className="view-course-button" style={{color: `darkslateblue`, position: `relative`, zIndex: `11`}}><span>View Course</span></div>
+                            </Link>
+                        </div>
+                        <div className="main-course-img" onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}>
+                            <animated.div style={{ transform: props.xy.to(trans1) }}>
+                            <img className="illust1" src={speak}></img>
+                            </animated.div>
+                            <animated.div style={{ transform: props.xy.to(trans2) }}>
+                            <img className="illust2" src={pres2}></img>
+                            </animated.div>
+                        </div>
+                        <div className="main-course-image"></div>                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
     );
 }
  

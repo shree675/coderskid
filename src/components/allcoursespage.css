@@ -52,6 +52,19 @@
     background-color:rgb(81, 183, 218);
 }
 
+.course4-page {
+    background-color:rgb(216, 125, 95);
+    /* background-color:rgb(255, 115, 64); */
+}
+
+.course5-page {
+    background-color:#474747;
+}
+
+.course6-page {
+    background-color:darkslateblue;
+}
+
 #follower1 {
     height: 14px;
     width: 14px;
@@ -202,6 +215,14 @@
     z-index: 11;
 }
 
+.illust4 {
+    width: 20vw;
+    margin-left: 75%;
+    margin-top: -35%;
+    /* position: relative; */
+    z-index: 11;
+}
+
 .illust2 {
     width: 20vw;
     margin-left: 55%;
@@ -209,6 +230,15 @@
     /* margin-top: -5%; */
     position: relative;
     z-index: 12;
+}
+
+.illust3 {
+    width: 15vw;
+    margin-left: 80%;
+    margin-top: -15%;
+    /* margin-top: -5%; */
+    position: relative;
+    z-index: 14;
 }
 
 
@@ -301,6 +331,14 @@
     z-index: 11;
 }
 
+.illust4 {
+    width: 40vw;
+    margin-left: 60%;
+    margin-top: -85%;
+    /* position: relative; */
+    z-index: 11;
+}
+
 .illust2 {
     width: 50vw;
     margin-left: 20%;
@@ -308,6 +346,10 @@
     /* margin-top: -5%; */
     position: relative;
     z-index: 12;
+    display: none;
+}
+
+.illust3 {
     display: none;
 }
 
