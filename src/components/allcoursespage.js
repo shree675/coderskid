@@ -95,7 +95,7 @@ const AllCourses = () => {
             <div id="follower1"></div>
             <div id="follower2"></div>
 
-            <div style={{overflow: `hidden`}}>
+            <div style={{overflow: `hidden`}}> 
                 <div className="jumbotron-courses" style={{height: window.innerHeight+15}}>
                 <MovingText
                 type="pulse"

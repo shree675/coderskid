@@ -10,9 +10,10 @@
 .homeh1{
     margin-top: 0%;
     padding-top: 8%;
+    color: black;
     left: -8%;
     transform: scale(.8, 1.8);
-    position: fixed;
+    position: relative;
     z-index: 5;
     font-size: 20rem;
     text-align: center;
@@ -30,7 +31,7 @@
 }
 
 .homeTop{
-    background-color: rgba(32, 178, 171, 0.932);
+    background-color: rgba(27, 184, 176, 0.712);
     position: absolute;
     z-index: 10;
     top: 0;
@@ -49,7 +50,7 @@
 }
 
 .image2{
-    width: 35%;
+    width: 40%;
 float:right;
     margin-right: 15%;
     margin-top: 2%;

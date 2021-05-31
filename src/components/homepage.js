@@ -224,6 +224,14 @@ class HomePage extends Component {
                 <div style={{height: `100px`, backgroundColor: `white`}}></div>
                 <Whycoding />                
 
+                <div style={{height: `40px`}}></div>
+                <div >
+                    <Link to='/allcourses' >    
+                        <button className="headBut5">View all courses ➝</button>
+                    </Link>    
+                    </div>
+                <div style={{height: `40px`}}></div>
+                
                 <div style={{height: `30px`, backgroundColor: `white`}}></div>
 
                 <div className="works">
@@ -453,10 +461,7 @@ class HomePage extends Component {
                     </div>                    
 
                     </div>     
-                    <div style={{height: `45px`}}></div>
-                    <Link to='/allcourses' >    
-                        <button className="headBut2">View all courses ➝</button>
-                    </Link>                                       
+                                                       
                 </div>
 
                 <div style={{height: `150px`}}></div>

@@ -25,7 +25,7 @@ function Home() {
               timing="ease"
               iteration="infinite"
               fillMode="none">
-              <h1 className="homeh1">CODERSKID</h1>
+              <h1 className="homeh1" style={{color:'black'}}>CODERSKID</h1>
             </MovingText>           
             <div className="homeTop">
             <ScrollAnimation
@@ -34,8 +34,10 @@ function Home() {
                     >
                 <h2 className="homeh2">Your child can change the world.</h2>
                 </ScrollAnimation>               
-                <img data-aos="fade-down" data-aos-duration="3000" className='image2' src={dev5}/>
-                
+                {/* <img data-aos="fade-down" data-aos-duration="3000" className='image2' src={dev5}/> */}
+              <div className='image2'>
+              <lottie-player data-aos="fade-down" data-aos-duration="3000" src="https://assets8.lottiefiles.com/packages/lf20_eTM2vQ.json"  background="transparent"  speed="1"   loop autoplay></lottie-player>
+                </div>
             </div>
         </div>
     )

@@ -23,7 +23,7 @@
 }
 
 .coderskid {
-  text-decoration: none;
+  text-decoration: none; 
   color: black;
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
@@ -262,6 +262,56 @@ li {
 }
 
 
+/************************************** view all courses button ***************************/
+
+.headBut5{
+  /* background-color: slateblue; */
+  background-color: lightseagreen;
+  padding: 16px 26px;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  border-radius: 15px;
+  margin-left: 45%;
+  margin-top: 30px;
+  font-weight: 600;
+  transition: transform .5s;
+}
+
+.headBut5:hover{
+  
+  /* background-color: rgb(62, 37, 226); */
+  background-color: rgb(50, 245, 200);
+  box-shadow: 6px 6px 5px 6px #888888;
+  transform: scale(1.1,1.1);
+  /* transition-delay: 1s; */
+}
+
+
+/************************************** view all courses button media query ***************************/
+
+@media screen and (max-width:620px){
+
+  .headBut5{
+    padding: 8px 14px;
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 0%;
+    border-radius: 10px;
+  }
+
+  
+.headBut5:hover{
+  
+  /* background-color: rgb(62, 37, 226); */
+  background-color: rgb(50, 245, 200);
+  box-shadow: 4px 4px 3px 4px #888888;
+  transform: scale(1.1,1.1);
+  /* transition-delay: 1s; */
+}
+
+}
 /******************************** Plan Section Media Query *********************************/
 
 
@@ -1128,8 +1178,9 @@ li {
     font-size: 18px;
     padding-left: 15%;
     /* color: rgb(255, 255, 255); */
-    color: black !important;
+    color: black;
     font-weight: 600;
+    margin: 15px auto;
   }
 
   .coderskid:hover {
@@ -1137,10 +1188,11 @@ li {
   }
   
   .free-class-button {
-    font-size: 8px;
-    padding: 5px;
+    font-size: 16px !important;
+    padding: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    margin: 15px auto;
   }
   
   .about-us-button {
