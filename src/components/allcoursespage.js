@@ -272,7 +272,7 @@ const AllCourses = () => {
                     <div className="main-course">
                         <div className="main-course-text">
                             <div className="main-course-name"><img src={google} height="40" style={{marginTop: `-5px`}}></img> SUITE</div>
-                            <div className="main-course-content">Enthusiasts will learn how to collaborate using different, free G-Suite Apps, including Gmail, Google Forms, Google Calendar, a shared Google Drive, and how to work on shared documents (Docs, Sheets, Slides, etc.).</div>                            
+                            <div className="main-course-content">Enthusiasts will learn how to collaborate using different, free G-Suite Apps, and how to work on shared documents.</div>                            
                             <Link to='/' style={{textDecoration: `none`, color: ``, position: `relative`, zIndex: `11`}}>
                                 <div className="view-course-button" style={{color: `#4e4e4e`, position: `relative`, zIndex: `11`}}><span>View Course</span></div>
                             </Link>
@@ -305,17 +305,17 @@ const AllCourses = () => {
                     <div className="main-course">
                         <div className="main-course-text">
                             <div className="main-course-name">PRESENTATION SKILLS</div>
-                            <div className="main-course-content">Our courses are designed for anyone from a rookie speaker to an established presenter. Whether you’re presenting an idea or a product or a complicated issue, this Specialization gives you tools to make it right.</div>
+                            <div className="main-course-content">Whether you’re presenting an idea or a product or a complicated issue, this Specialization gives you tools to make it right.</div>
                             <Link to='/' style={{textDecoration: `none`, color: ``, position: `relative`, zIndex: `11`}}>
                                 <div className="view-course-button" style={{color: `darkslateblue`, position: `relative`, zIndex: `11`}}><span>View Course</span></div>
                             </Link>
                         </div>
                         <div className="main-course-img" onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}>
                             <animated.div style={{ transform: props.xy.to(trans1) }}>
-                            <img className="illust1" src={speak}></img>
+                            <img className="illust1" src={pres2}></img>
                             </animated.div>
                             <animated.div style={{ transform: props.xy.to(trans2) }}>
-                            <img className="illust2" src={pres2}></img>
+                            <img className="illust2" src={speak}></img>
                             </animated.div>
                         </div>
                         <div className="main-course-image"></div>                        
