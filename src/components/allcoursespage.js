@@ -31,7 +31,7 @@ import canva from '../assets/canva.svg';
 
 const AllCourses = () => {
 
-    document.body.scrollTop=document.documentElement.scrollTop=0;
+    // document.body.scrollTop=document.documentElement.scrollTop=0;
 
     useEffect(()=>{
         try{
@@ -74,32 +74,38 @@ const AllCourses = () => {
 
     function scrollDown1(){
         // console.log('scroll');
-        window.scrollTo(0,window.innerHeight);
+        // window.scrollTo(0,window.innerHeight+window.scrollY);
+        document.getElementById("page2").scrollIntoView();
     }
 
     function scrollDown2(){
         // console.log('scroll');
-        window.scrollTo(0,2*window.innerHeight+2);
+        // window.scrollTo(0,window.innerHeight+window.scrollY+2);
+        document.getElementById("page3").scrollIntoView();
     }
 
     function scrollDown3(){
         // console.log('scroll');
-        window.scrollTo(0,3*window.innerHeight+2);
+        // window.scrollTo(0,window.innerHeight+window.scrollY+2);
+        document.getElementById("page4").scrollIntoView();
     }
 
     function scrollDown4(){
         // console.log('scroll');
-        window.scrollTo(0,4*window.innerHeight+2);
+        // window.scrollTo(0,window.innerHeight+window.scrollY+2);
+        document.getElementById("page5").scrollIntoView();
     }
 
     function scrollDown5(){
         // console.log('scroll');
-        window.scrollTo(0,5*window.innerHeight+2);
+        // window.scrollTo(0,window.innerHeight+window.scrollY+2);
+        document.getElementById("page6").scrollIntoView();
     }
 
     function scrollDown6(){
         // console.log('scroll');
-        window.scrollTo(0,6*window.innerHeight+2);
+        // window.scrollTo(0,window.innerHeight+window.scrollY+2);
+        document.getElementById("page7").scrollIntoView();
     }
 
     const calc=(x,y)=>[x-window.innerWidth/2,y-window.innerHeight/2];
@@ -112,9 +118,9 @@ const AllCourses = () => {
     return (        
        
         <div id="courses-page">
-            <div style={{position: `relative`, zIndex: `10`}}>
+            {/* <div style={{position: `relative`, zIndex: `10`}}>
                 <CoursesNav />
-            </div>
+            </div> */}
                 
             <div id="follower1"></div>
             <div id="follower2"></div>
@@ -132,9 +138,12 @@ const AllCourses = () => {
                 <h1 style={{position:'fixed'}} className="homeh1">CODERSKID</h1>
                 </MovingText> 
                     <div className="jtext">
-                        <div className="jumbotron-text">The right place</div>
+                        {/* <div className="jumbotron-text">The right place</div>
                         <div className="jumbotron-text">for your kids</div>
-                        <div className="jumbotron-text">to shape their future.</div>
+                        <div className="jumbotron-text">to shape their future.</div> */}
+                        <div className="jumbotron-text">Here are some</div>
+                        <div className="jumbotron-text">of the courses</div>
+                        <div className="jumbotron-text">that we offer</div>
                     </div>
                     <div className="scroll-down" style={{marginTop: window.innerHeight/1.6}}>
                         <button className="scroll-down-button" onClick={scrollDown1}>
@@ -146,7 +155,7 @@ const AllCourses = () => {
 
 
 
-            <div style={{overflow: `hidden`}}>
+            <div style={{overflow: `hidden`}} id="page2">
                 <div className="course1-page" style={{height: '100vh'}}>
                     <div className="main-course">
                         <div className="main-course-text">
@@ -177,7 +186,7 @@ const AllCourses = () => {
 
 
 
-            <div style={{overflow: `hidden`, height: `100vh`}}>
+            <div style={{overflow: `hidden`, height: `100vh`}} id="page3">
                 <div className="course2-page" style={{height: '100vh'}}>
                     <div className="main-course">
                         <div className="main-course-text">
@@ -207,7 +216,7 @@ const AllCourses = () => {
 
 
 
-            <div style={{overflow: `hidden`, height: `100vh`}}>
+            <div style={{overflow: `hidden`, height: `100vh`}} id="page4">
                 <div className="course3-page" style={{height: '100vh'}}>
                     <div className="main-course">
                         <div className="main-course-text">
@@ -237,7 +246,7 @@ const AllCourses = () => {
 
 
 
-            <div style={{overflow: `hidden`, height: `100vh`}}>
+            <div style={{overflow: `hidden`, height: `100vh`}} id="page5">
                 <div className="course4-page" style={{height: '100vh'}}>
                     <div className="main-course">
                         <div className="main-course-text">
@@ -267,7 +276,7 @@ const AllCourses = () => {
 
 
 
-            <div style={{overflow: `hidden`, height: `100vh`}}>
+            <div style={{overflow: `hidden`, height: `100vh`}} id="page6">
                 <div className="course5-page" style={{height: '100vh'}}>
                     <div className="main-course">
                         <div className="main-course-text">
@@ -300,7 +309,7 @@ const AllCourses = () => {
 
 
 
-            <div style={{overflow: `hidden`, height: `100vh`}}>
+            <div style={{overflow: `hidden`, height: `100vh`}} id="page7">
                 <div className="course6-page" style={{height: '100vh'}}>
                     <div className="main-course">
                         <div className="main-course-text">

@@ -22,7 +22,8 @@
 .homeh2{
     margin: 0;
     margin-top: 8%;
-    color: rgba(240, 255, 240, 0.938);
+    /* color: rgba(240, 255, 240, 0.938); */
+    color: white;
     font-size: 450%;
     text-align: center;
     margin-right: 25%;

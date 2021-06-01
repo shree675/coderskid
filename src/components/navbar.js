@@ -31,26 +31,32 @@ class Navbar extends Component {
 
     render(){
         return (
-            <div style={{position: `fixed`, width: `100%`, zIndex: `3`}} className={this.state.scrolled?"bg1":"bg2"}>
+            <div style={{position: `fixed`, width: `100%`, zIndex: `30`}} className={this.state.scrolled?"bg1":"bg2"}>
 
                     <div className={this.state.scrolled?"navbar-init":"navbar-scrolled"}>
                         <div style={{float: `left`}}>
                             <Link to='/' style={{textDecoration: `none`}} >
                                 <div style={{margin: `0px`, paddingBottom: this.state.scrolled?`15px`:`12px`}}>                                    
-                                    <span style={{color:this.state.scrolled?`black`:`lightseagreen`}} className="coderskid">Coderskid</span>
+                                    <span style={{color: this.state.scrolled?`black`:`lightseagreen`}} className="coderskid">Coderskid</span>
                                 </div>
                             </Link>
                         </div>
                         <div className="right">
                         <Link to='/' id="us-link">  
-                            <div className="about-us-button" style={{fontSize: this.state.scrolled?`100%`:`85%`}}>                  
+                            {/* <div className="about-us-button" style={{fontSize: this.state.scrolled?`100%`:`85%`}}>                  
+                                <div>About Us</div>                            
+                            </div> */}
+                            <div className="about-us-button2" id="about-id" style={{fontSize: this.state.scrolled?`100%`:`85%`}}>                  
                                 <div>About Us</div>                            
                             </div>
                         </Link>                        
                         </div>
                         <div className="right">
                         <Link to={this.props.namelink} style={{textDecoration: `none`, color: `black`}}>  
-                            <div onClick={this.props.ordered} className="free-class-button" style={{fontSize: this.state.scrolled?`100%`:`80%`}}>
+                            {/* <div onClick={this.props.ordered} className="free-class-button" style={{fontSize: this.state.scrolled?`100%`:`80%`}}>
+                                {this.props.name}                                
+                            </div> */}
+                            <div onClick={this.props.ordered} className="about-us-button2" style={{fontSize: this.state.scrolled?`100%`:`80%`}}>
                                 {this.props.name}                                
                             </div>
                         </Link>                        

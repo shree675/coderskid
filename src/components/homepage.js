@@ -23,6 +23,7 @@ import solve from '../assets/problemsolving.jpg';
 import speak from '../assets/speaking.jpg';
 import Whycoding from './whycoding';
 import Home from './Home';
+import AllCourses from './allcoursespage';
 
 class HomePage extends Component {
 
@@ -181,18 +182,28 @@ class HomePage extends Component {
                 <div style={{height: `100px`, backgroundColor: `white`}}></div>
                 <Whycoding />                
 
-                <div style={{height: `40px`}}></div>
-                <div >
+                {/* <div style={{height: `40px`}}></div> */}
+                {/* <div >
                     <Link to='/allcourses' >    
                         <button className="headBut5">View all courses ➝</button>
                     </Link>    
-                    </div>
-                <div style={{height: `40px`}}></div>
+                </div> */}
+
+{/* ------------------------------------------------------------------------------------------------------------------------------- */}
+
+
+                <AllCourses />
+
+
+{/* ------------------------------------------------------------------------------------------------------------------------------- */}
+
+
+                <div style={{height: `80px`}}></div>
                 
                 <div style={{height: `30px`, backgroundColor: `white`}}></div>
 
                 <div className="works">
-                    <div className="works-title">Here are some of the best works of our students</div>
+                    <div className="works-title">These are some of the best works of our students</div>
                     <br></br>
                     <div className="works-card-outer1">
                     <div className="works-card-inner">
