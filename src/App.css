@@ -883,18 +883,26 @@ li {
 
 .future-content {
   font-size: 30px;
-  font-family: 'Quicksand';
+  /* font-family: 'Quicksand'; */
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   margin-bottom: 60px;
   padding-left: 0px;
   padding-right: 0px;
   font-weight: bold;
-  color:rgb(52, 150, 127);
+  color: rgb(52, 189, 175);
 }
 
 .future-outer {
   flex: 1;
   margin: 0px;
+}
+
+.future-img {
+  width: 80%;  
+  margin: 20px;
+  padding: 0px;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 1020px) {
@@ -913,6 +921,11 @@ li {
     padding: 15px;
     margin: 0px;
   }
+
+  .future-img {
+    width: 95%;
+  }
+
 }
 
 @media screen and (max-width: 900px) {
@@ -926,15 +939,8 @@ li {
 
   .future-content {
     font-size: 22px;
-    padding: 15px;
+    padding: 10px;
   }
-}
-
-.future-img {
-  width: 70%;  
-  margin: 20px;
-  padding: 0px;
-  border-radius: 20px;
 }
 
 .get-started {

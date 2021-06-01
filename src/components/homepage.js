@@ -176,49 +176,6 @@ class HomePage extends Component {
         return (
             <div>
                 <Navbar ordered={this.purchaseHandler} name="Book a free class" namelink="/form"/>
-                {/* <div style={{height: `30px`}}></div>
-                
-                <div className="jumbotron">
-                    
-                    <div style={{zIndex: `2`}}>
-                    <div className="title">
-                    <ScrollAnimation
-                    animateIn='animate__fadeInUp'
-                    animateOut='animate__fadeOut'
-                    >
-                    Your child can change the world.
-                    </ScrollAnimation>
-                    </div>
-                    <div className="titlePara">
-                    <ScrollAnimation
-                    animateIn='animate__fadeInUp'
-                    animateOut='animate__fadeOut'
-                    >
-                    Lorem Ipsum
-                    </ScrollAnimation>
-                    </div>
-                    </div>
-                    <img className="homeImg" src={freelancer} ></img>
-
-                </div>
-
-                <div className="jumbotron-small">
-                    
-                    <div style={{zIndex: `2`}}>
-                    <img className="homeImg-small" src={freelancer4} ></img>
-                    <div className="title-small">                        
-                    Your child can change the world.
-                    </div>
-                    <div className="titlePara-small">
-                    Lorem Ipsum
-                    </div>
-                    <Link to='/form' >    
-                        <button className="headBut4">Book A Free Class</button>
-                    </Link>
-                    </div>
-                    
-                </div>
- */}
                 <Home />
                 
                 <div style={{height: `100px`, backgroundColor: `white`}}></div>
